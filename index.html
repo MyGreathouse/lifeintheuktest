@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Life in the UK Practice Test 2026 — Free Mock Tests | YourUKHelpDesk</title>
+<meta name="description" content="Free Life in the UK practice tests. 15 realistic mock exams, 24 questions, 45-minute timer, instant results and full answer explanations. No sign-up required.">
+<link rel="canonical" href="https://lifeintheuk.risten.co.uk/">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#1B2A4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="YourUKHelpDesk">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Life in the UK Practice Test — Free Mock Tests">
+<meta property="og:description" content="Free Life in the UK practice tests with realistic mock exams, instant results and explanations. No account needed.">
+<meta property="og:url" content="https://lifeintheuk.risten.co.uk/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Life in the UK Practice Test — Free Mock Tests">
+<meta name="twitter:description" content="15 free mock tests, 262 practice questions, instant results. No sign-up.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1B2A4A; --navy-800:#141F38; --navy-600:#28406F; --navy-100:#D5DCEA;
+  --navy-50:#EEF1F7; --navy-400:#5573AB; --navy-300:#8096C0;
+  --gold:#F5A623; --gold-100:#FCE7C1; --gold-50:#FEF6E9; --gold-600:#A8690C;
+  --white:#fff; --success:#1E7A3D; --error:#C0362C;
+  --radius:.75rem;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--navy);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.2;color:var(--gold-600)}
+/* Bright gold on the dark hero band; gold-600 (darker) elsewhere on white, since
+   the brand gold at full brightness only reaches ~2:1 contrast on white and fails
+   WCAG AA -- gold-600 keeps the golden-yellow identity while staying readable. */
+.hero h1{color:var(--gold)}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* layout */
+.wrap{max-width:1100px;margin:0 auto;padding:0 1rem}
+.narrow{max-width:760px;margin:0 auto;padding:0 1rem}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--navy-100)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+.brand{font-family:Fraunces,serif;font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
+.brand span{color:var(--gold-600)}
+.brand .mark{width:26px;height:26px;border-radius:6px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-size:.75rem;font-weight:700}
+.nav-links{display:flex;gap:1.4rem;align-items:center}
+.nav-links button{font-size:.875rem;font-weight:500;color:var(--navy-600)}
+.nav-links button:hover{color:var(--gold-600)}
+.navtoggle{display:none;padding:.5rem;border-radius:8px;color:var(--navy);font-size:1.35rem;line-height:1}
+@media(max-width:860px){
+  .navtoggle{display:block}
+  .nav-links{position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--navy-100);
+    flex-direction:column;align-items:stretch;gap:0;padding:.35rem 1rem .75rem;display:none;box-shadow:0 8px 20px rgba(20,31,56,.08)}
+  .nav-links.open{display:flex}
+  .nav-links button{text-align:left;padding:.85rem .25rem;font-size:1rem;border-bottom:1px solid var(--navy-50)}
+  .nav-links button:last-child{border-bottom:none}
+}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border-radius:var(--radius);font-weight:600;font-size:.95rem;padding:.7rem 1.35rem;transition:background .15s,border-color .15s}
+.btn-primary{background:var(--gold);color:var(--navy-800)}
+.btn-primary:hover{background:#F7BB51}
+.btn-secondary{background:var(--navy);color:#fff}
+.btn-secondary:hover{background:var(--navy-600)}
+.btn-outline{border:2px solid var(--navy);color:var(--navy);background:transparent}
+.btn-outline:hover{background:var(--navy-50)}
+.btn-outline-light{border:2px solid rgba(255,255,255,.7);color:#fff}
+.btn-outline-light:hover{background:rgba(255,255,255,.12)}
+.btn-lg{padding:.95rem 1.9rem;font-size:1.05rem}
+.btn-sm{padding:.45rem .9rem;font-size:.82rem}
+.btn:disabled{opacity:.45;cursor:default}
+
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:5rem 0}
+.eyebrow{display:inline-block;background:var(--navy-600);color:var(--gold);font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.35rem 1rem;border-radius:999px;margin-bottom:1.25rem}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.6rem);max-width:16ch}
+.hero p.lede{margin-top:1.35rem;max-width:46ch;font-size:1.1rem;color:var(--navy-100)}
+.hero-cta{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;padding-top:2rem;border-top:1px solid var(--navy-600);max-width:560px}
+.stats dt{font-size:.8rem;color:var(--navy-300)}
+.stats dd{font-family:Fraunces,serif;font-size:1.9rem;font-weight:700;color:var(--gold);margin-top:.15rem}
+
+/* cards */
+.section{padding:4rem 0}
+.grid{display:grid;gap:1rem}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{border:1px solid var(--navy-100);border-radius:var(--radius);background:#fff;padding:1.5rem;transition:border-color .15s}
+.card.clickable:hover{border-color:var(--gold)}
+.card h3{font-size:1.05rem;margin-top:.75rem}
+.card p{font-size:.88rem;color:var(--navy-400);margin-top:.4rem}
+.icon{width:32px;height:32px;border-radius:8px;background:var(--gold-50);display:grid;place-items:center;font-size:1rem}
+.section h2{font-size:1.8rem;text-align:center}
+.band{background:var(--navy-50)}
+
+/* test runner */
+.runner-head{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center;justify-content:space-between;padding-bottom:1rem;border-bottom:1px solid var(--navy-100)}
+.runner-head h2{font-size:1.15rem}
+.runner-head .sub{font-size:.82rem;color:var(--navy-400)}
+.timer{display:flex;align-items:center;gap:.45rem;font-variant-numeric:tabular-nums;font-weight:700;font-size:.95rem;padding:.4rem .8rem;border-radius:var(--radius);border:1px solid var(--navy-100);background:var(--navy-50);color:var(--navy)}
+.timer.warn{border-color:var(--gold);background:var(--gold-50);color:var(--gold-600)}
+.timer.crit{border-color:var(--error);background:#FDF0EF;color:var(--error)}
+.runner-body{display:grid;grid-template-columns:1fr 230px;gap:2rem;margin-top:1.5rem;align-items:start}
+@media(max-width:860px){.runner-body{grid-template-columns:1fr}}
+.qcard{border:1px solid var(--navy-100);border-radius:var(--radius);padding:1.5rem}
+.qtop{display:flex;justify-content:space-between;gap:.85rem;align-items:stretch;margin-bottom:1.25rem}@media(max-width:620px){.qtop{flex-direction:column}.qtop .flagbtn{align-self:flex-start}}
+.qtext{font-family:Fraunces,serif;font-weight:600;font-size:1.15rem;line-height:1.45;color:var(--gold);background:var(--navy);border-left:5px solid var(--gold);border-radius:.55rem;padding:1.1rem 1.25rem;flex:1}
+.flagbtn{flex-shrink:0;display:flex;align-items:center;gap:.35rem;font-size:.75rem;font-weight:600;border:1px solid var(--navy-100);border-radius:var(--radius);padding:.4rem .7rem;color:var(--navy-600)}
+.flagbtn:hover{background:var(--gold-50);color:var(--gold-600)}
+.flagbtn.on{background:var(--gold-50);border-color:var(--gold);color:var(--gold-600)}
+
+/* answers */
+.answers{display:flex;flex-direction:column;gap:.7rem}
+.ans{display:flex;align-items:center;gap:1rem;width:100%;text-align:left;border:2px solid var(--navy-100);border-radius:var(--radius);padding:1rem 1.15rem;transition:border-color .15s,background .15s}
+/* Border-only hover: nav() scrolls to top on every click, so a stationary cursor often lands on a different answer after the page jumps. A filled hover would look like a pre-selected answer -- this was the reported bug. Border-only can never be confused with the solid navy .sel state. */
+.ans:hover:not(:disabled){border-color:var(--gold)}
+.ans .letter{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:2px solid var(--navy-300);display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700;color:var(--navy-400)}
+.ans .txt{flex:1;font-size:.95rem}
+.ans.sel{border-color:var(--navy);background:var(--navy-50)}
+.ans.sel .letter{background:var(--navy);border-color:var(--navy);color:#fff}
+.ans.correct{border-color:var(--success);background:#EFF7F1}
+.ans.wrong{border-color:var(--error);background:#FDF0EF}
+.ans.dim{opacity:.55}
+.ans:disabled{cursor:default}
+.badge-ico{flex-shrink:0;font-weight:700;font-size:1rem}
+.badge-ico.ok{color:var(--success)}
+.badge-ico.no{color:var(--error)}
+
+/* nav grid */
+.navi h3{font-size:.75rem;text-transform:uppercase;letter-spacing:.06em;color:var(--navy-400);font-family:Inter,sans-serif;font-weight:700;margin-bottom:.75rem}
+.qgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem}
+.qgrid button{height:38px;border-radius:8px;font-size:.82rem;font-weight:600;border:1px solid var(--navy-100);background:#fff;color:var(--navy-300)}
+.qgrid button.answered{background:var(--navy-100);color:var(--navy);border-color:var(--navy-100)}
+.qgrid button.flagged{background:var(--gold-100);color:var(--gold-600);border:2px solid var(--gold)}
+.qgrid button.current{background:var(--navy);color:#fff;border-color:var(--navy);box-shadow:0 0 0 2px #fff,0 0 0 4px var(--navy)}
+.legend{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:1rem;font-size:.72rem;color:var(--navy-400)}
+.legend span{display:flex;align-items:center;gap:.35rem}
+.swatch{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+.runner-foot{display:flex;justify-content:space-between;gap:.75rem;margin-top:1.5rem}
+
+/* results */
+.result{border:1px solid var(--navy-100);border-radius:var(--radius);padding:2.5rem 1.5rem;text-align:center}
+.result .kicker{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--navy-400)}
+.result .score{font-family:Fraunces,serif;font-size:3.2rem;font-weight:700;margin-top:.4rem}
+.result .pct{font-size:1.1rem;color:var(--navy-400)}
+.verdict{display:inline-flex;align-items:center;gap:.5rem;margin-top:1rem;padding:.45rem 1.2rem;border-radius:999px;font-weight:700;font-size:.9rem}
+.verdict.pass{background:#DFF1E5;color:var(--success)}
+.verdict.fail{background:var(--navy-50);color:var(--navy)}
+.breakdown{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;max-width:400px;margin:2rem auto 0;padding-top:1.5rem;border-top:1px solid var(--navy-100)}
+.breakdown dt{font-size:.78rem;color:var(--navy-400)}
+.breakdown dd{font-family:Fraunces,serif;font-size:1.4rem;font-weight:700;margin-top:.15rem}
+.explain{background:var(--navy-50);border-radius:var(--radius);padding:1rem;margin-top:1rem;font-size:.88rem}
+.explain .meta{color:var(--navy-400)}
+.explain .why{margin-top:.5rem;color:var(--navy-600)}
+.note{background:var(--gold-50);border:1px solid var(--gold-100);border-radius:var(--radius);padding:1.25rem;text-align:center;margin-top:1.5rem;font-size:.9rem}
+
+/* misc */
+/* Reserved ad containers. Kept empty until a network is configured and
+   consent is given; min-height reserves space so inserting an ad later
+   doesn't cause layout shift (protects Core Web Vitals / CLS). Deliberately
+   absent from the test-taking screen. */
+.adslot{min-height:90px;margin:2rem 0;border-radius:var(--radius);background:var(--navy-50);
+  display:flex;align-items:center;justify-content:center}
+.adslot:empty::after{content:"Advertisement";font-size:.7rem;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--navy-300)}
+.consent{position:fixed;left:0;right:0;bottom:0;z-index:80;background:var(--navy-800);color:#fff;
+  padding:1rem 1.25rem;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+.consent-inner{max-width:1100px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.consent p{font-size:.85rem;color:var(--navy-100);max-width:62ch}
+.consent a{color:var(--gold);text-decoration:underline}
+.consent .btns{display:flex;gap:.6rem;flex-wrap:wrap}
+.center{text-align:center}
+.mt1{margin-top:.5rem}.mt2{margin-top:1rem}.mt3{margin-top:1.5rem}.mt4{margin-top:2rem}.mt6{margin-top:3rem}
+.muted{color:var(--navy-400);font-size:.9rem}
+.row{display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center}
+.page{padding:3rem 0}
+.chapter-row{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.chapter-row .num{font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-600)}
+.count{font-size:.85rem;font-weight:600;color:var(--navy-300);flex-shrink:0}
+.bar{height:8px;background:var(--navy-100);border-radius:999px;overflow:hidden;margin-top:.35rem}
+.bar i{display:block;height:100%;border-radius:999px;background:var(--gold)}
+.pill{font-size:.7rem;font-weight:700;padding:.25rem .7rem;border-radius:999px;background:var(--navy-50);color:var(--navy-600)}
+
+/* modal */
+.overlay{position:fixed;inset:0;background:rgba(13,21,38,.6);display:grid;place-items:center;padding:1rem;z-index:60}
+.modal{background:#fff;border-radius:var(--radius);padding:1.75rem;max-width:400px;width:100%}
+.modal h3{font-size:1.25rem}
+.modal dl{margin-top:1rem;font-size:.9rem}
+.modal dl div{display:flex;justify-content:space-between;padding:.3rem 0}
+.modal dt{color:var(--navy-400)}
+.modal dd{font-weight:600}
+
+footer.foot{background:var(--navy-800);color:var(--navy-100);padding:3rem 0;margin-top:4rem}
+footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--navy-600)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand"><span class="mark">UK</span>YourUK<span>HelpDesk</span></div>
+    <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks" onclick="toggleNav()">☰</button>
+    <nav class="nav-links" id="navlinks">
+      <button onclick="go('home')">Home</button>
+      <button onclick="go('tests')">Practice Tests</button>
+      <button onclick="go('study')">Study</button>
+      <button onclick="go('dashboard')">My Progress</button>
+    </nav>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="brand" style="color:#fff">YourUK<span style="color:var(--gold)">HelpDesk</span></div>
+    <p class="mt1" style="font-size:.85rem;color:var(--navy-300)">Everything they forgot to tell you about UK life.</p>
+    <p class="mt3" style="font-size:.82rem">
+      <button onclick="go('about')" style="color:var(--gold);text-decoration:underline">About</button> &nbsp;·&nbsp;
+      <button onclick="go('privacy')" style="color:var(--gold);text-decoration:underline">Privacy</button> &nbsp;·&nbsp;
+      <button onclick="go('cookies')" style="color:var(--gold);text-decoration:underline">Cookies</button> &nbsp;·&nbsp;
+      <button onclick="go('terms')" style="color:var(--gold);text-decoration:underline">Terms</button>
+    </p>
+    <p class="disclaim">YourUKHelpDesk is an independent revision resource produced by Risten Global Ltd. It is not affiliated with, endorsed by, or connected to the UK Home Office or any government body, and these practice questions are not the official Life in the UK Test.</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- Content: original sample questions, 5 chapters ---------- */
+const CHAPTERS = [
+  {slug:'values', title:'The Values and Principles of the UK', desc:'Democracy, the rule of law, individual liberty, and mutual respect.'},
+  {slug:'whatis', title:'What is the UK?', desc:'The nations, geography, and constitutional make-up of the United Kingdom.'},
+  {slug:'history1', title:'Early Britain to the Stuarts', desc:'From prehistoric Britain through the Tudors to the Glorious Revolution.'},
+  {slug:'history2', title:'The Empire to Modern Britain', desc:'The Industrial Revolution, the World Wars, and Britain since 1945.'},
+  {slug:'society', title:'A Modern, Thriving Society', desc:'Religion, customs, sport, arts, and everyday life in the UK today.'},
+  {slug:'govt1', title:'Government and Democracy', desc:'Parliament, elections, the monarchy, and devolution.'},
+  {slug:'govt2', title:'The Law and Your Role', desc:'Courts, police, tax, local government, and civic responsibilities.'}
+];
+
+const Q = [{"id": "q0", "ch": "values", "text": "Which of the following is one of the fundamental principles of British life?", "A": "Uniformity of religious belief", "B": "Tolerance of those with different faiths and beliefs", "C": "State ownership of the press", "D": "Compulsory military service", "correct": "B", "why": "Tolerance of those with different faiths and beliefs is one of the fundamental principles of British life, alongside democracy, the rule of law, individual liberty and participation in community life.", "diff": "EASY"}, {"id": "q1", "ch": "values", "text": "The rule of law means that:", "A": "The Prime Minister can overrule any court decision", "B": "Everyone, including the government, is subject to the law", "C": "Only citizens are protected by the law", "D": "Laws apply only to criminal matters", "correct": "B", "why": "Under the rule of law, everyone — including those who govern — is subject to and accountable under the law. No one is above it.", "diff": "MEDIUM"}, {"id": "q2", "ch": "values", "text": "Which of these is NOT a fundamental principle of British life?", "A": "Democracy", "B": "Individual liberty", "C": "Compulsory religious observance", "D": "Participation in community life", "correct": "C", "why": "The UK protects freedom of religion and belief rather than requiring observance, so compulsory religious observance is not a British value.", "diff": "MEDIUM"}, {"id": "q3", "ch": "values", "text": "What must applicants for permanent residence or citizenship in the UK usually demonstrate?", "A": "Ownership of property in the UK", "B": "A good standard of English and knowledge of life in the UK", "C": "Membership of a political party", "D": "Ten years of military service", "correct": "B", "why": "Applicants generally need to show a good standard of English and pass the Life in the UK Test, demonstrating knowledge of life in the UK.", "diff": "EASY"}, {"id": "q4", "ch": "values", "text": "Participating in community life in the UK can include:", "A": "Voting only", "B": "Volunteering, joining local groups and helping neighbours", "C": "Attending a place of worship only", "D": "Paying taxes only", "correct": "B", "why": "Community participation is broad: volunteering, joining clubs and societies, helping neighbours, and taking part in local events all count.", "diff": "EASY"}, {"id": "q5", "ch": "values", "text": "Which of these is a responsibility of those living in the UK?", "A": "Reporting your neighbours to the police weekly", "B": "Respecting the rights of others and obeying the law", "C": "Attending a state church service each Sunday", "D": "Serving in the armed forces", "correct": "B", "why": "Residents are expected to obey the law, respect the rights of others, treat people fairly, and look after themselves, their family and their area.", "diff": "EASY"}, {"id": "q6", "ch": "values", "text": "At a citizenship ceremony, new citizens make a pledge to:", "A": "Pay double taxes for five years", "B": "Respect the rights, freedoms and laws of the UK", "C": "Renounce all previous friendships", "D": "Join the civil service", "correct": "B", "why": "New citizens swear or affirm allegiance and pledge loyalty to the UK, promising to respect its rights, freedoms and laws.", "diff": "MEDIUM"}, {"id": "q7", "ch": "values", "text": "Individual liberty in the UK means:", "A": "People may do absolutely anything without consequence", "B": "People are free to make their own choices within the law", "C": "Only the wealthy have freedom of choice", "D": "Freedom applies only to British-born citizens", "correct": "B", "why": "Individual liberty means people are free to make their own choices and hold their own beliefs, within the framework of the law.", "diff": "MEDIUM"}, {"id": "q8", "ch": "values", "text": "Which statement about the UK is accurate?", "A": "It is a religiously and ethnically diverse society", "B": "Only one religion is permitted", "C": "Everyone must speak the same regional dialect", "D": "Immigration has never occurred", "correct": "A", "why": "The UK is a diverse society, with people of many ethnic backgrounds, religions and none living side by side.", "diff": "EASY"}, {"id": "q9", "ch": "values", "text": "Discriminating against someone because of their religion or race in the UK is:", "A": "Encouraged in the workplace", "B": "Against the law", "C": "Permitted if the employer prefers", "D": "Legal outside London", "correct": "B", "why": "Discrimination on grounds such as race, religion, sex, disability, age or sexual orientation is against the law in the UK.", "diff": "EASY"}, {"id": "q10", "ch": "values", "text": "Looking after the environment and your local area is best described as:", "A": "A legal requirement enforced by prison sentences", "B": "A responsibility of those living in the UK", "C": "Solely the government's job", "D": "Optional for non-citizens", "correct": "B", "why": "Caring for your local area and the environment is one of the responsibilities of everyone living in the UK.", "diff": "EASY"}, {"id": "q11", "ch": "values", "text": "Which of these is a value the UK expects residents to uphold?", "A": "Treating others with fairness", "B": "Avoiding all contact with neighbours", "C": "Refusing to serve on a jury", "D": "Ignoring court summons", "correct": "A", "why": "Treating others with fairness is a core expectation, connected to the values of tolerance and mutual respect.", "diff": "EASY"}, {"id": "q12", "ch": "values", "text": "Freedom of speech in the UK means people may:", "A": "Say anything at all, including threats and incitement", "B": "Express opinions and ideas within the limits of the law", "C": "Only criticise foreign governments", "D": "Speak freely only in Parliament", "correct": "B", "why": "Freedom of speech is protected, but it is not absolute: laws restrict things such as incitement to violence and hate speech.", "diff": "MEDIUM"}, {"id": "q13", "ch": "values", "text": "What is meant by 'mutual respect' as a British value?", "A": "Everyone must hold identical opinions", "B": "People treat each other with respect despite differences", "C": "Only respecting people of your own faith", "D": "Respect is owed only to officials", "correct": "B", "why": "Mutual respect means treating others with consideration and dignity even when you disagree with their views or beliefs.", "diff": "EASY"}, {"id": "q14", "ch": "values", "text": "Which of the following is true of the Life in the UK Test?", "A": "It is taken only by children", "B": "It is part of the requirement for settlement and citizenship", "C": "It replaces the need for a visa", "D": "It is taken annually by all residents", "correct": "B", "why": "Passing the Life in the UK Test is normally required when applying for indefinite leave to remain or British citizenship.", "diff": "EASY"}, {"id": "q15", "ch": "values", "text": "In the UK, extremism and violent behaviour to achieve political aims is:", "A": "Accepted if the cause is popular", "B": "Not acceptable and is against the law", "C": "Permitted during elections", "D": "Only illegal in Scotland", "correct": "B", "why": "The UK rejects extremism and the use of violence to achieve political goals; such actions are unlawful.", "diff": "MEDIUM"}, {"id": "q16", "ch": "values", "text": "Which of these is a democratic right in the UK?", "A": "The right to avoid all taxation", "B": "The right to vote in elections once eligible", "C": "The right to ignore court rulings", "D": "The right to appoint judges", "correct": "B", "why": "Voting in elections is a fundamental democratic right for those who are eligible and registered.", "diff": "EASY"}, {"id": "q17", "ch": "values", "text": "The phrase 'no one is above the law' means:", "A": "Only ordinary citizens must obey the law", "B": "Government ministers and police must also obey the law", "C": "Judges are exempt from the law", "D": "Laws change with each new monarch", "correct": "B", "why": "It means everyone, whatever their position or wealth, is subject to the same laws.", "diff": "MEDIUM"}, {"id": "q18", "ch": "values", "text": "Which of these best describes the UK's approach to religion?", "A": "One religion is compulsory for all", "B": "People are free to practise any religion or none", "C": "Religion is banned in public", "D": "Only Christianity is legal", "correct": "B", "why": "People in the UK are free to practise their religion, change religion, or hold no religious belief at all.", "diff": "EASY"}, {"id": "q19", "ch": "values", "text": "Which is a benefit of taking part in community life?", "A": "It reduces your tax bill automatically", "B": "It helps integration and builds connections with neighbours", "C": "It guarantees citizenship", "D": "It exempts you from jury service", "correct": "B", "why": "Taking part in community life helps people integrate, build relationships, and contribute to the place where they live.", "diff": "EASY"}, {"id": "q20", "ch": "values", "text": "British citizenship or settlement applicants are expected to:", "A": "Reject their cultural heritage entirely", "B": "Respect the laws, values and traditions of the UK", "C": "Speak only English at home", "D": "Live only in England", "correct": "B", "why": "Applicants are expected to respect UK laws, values and traditions, while the UK remains a diverse society where heritage is valued.", "diff": "MEDIUM"}, {"id": "q21", "ch": "values", "text": "Which of these is protected by UK equality law?", "A": "Preference for a football team", "B": "Race, religion, sex, age, disability and sexual orientation", "C": "Choice of supermarket", "D": "Hair colour", "correct": "B", "why": "Equality legislation protects a set of characteristics including race, religion or belief, sex, age, disability and sexual orientation.", "diff": "MEDIUM"}, {"id": "q22", "ch": "values", "text": "Domestic violence in the UK is:", "A": "A private family matter with no legal consequence", "B": "A serious crime that can be reported to the police", "C": "Only a crime if the victim is a woman", "D": "Legal within marriage", "correct": "B", "why": "Domestic violence is a serious crime in the UK, regardless of the relationship between the people involved.", "diff": "MEDIUM"}, {"id": "q23", "ch": "values", "text": "Forced marriage in the UK is:", "A": "Legal with parental consent", "B": "A criminal offence", "C": "Permitted for those over 21", "D": "Encouraged by the courts", "correct": "B", "why": "Forcing someone to marry against their will is a criminal offence in the UK, and protection orders are available.", "diff": "MEDIUM"}, {"id": "q24", "ch": "values", "text": "Female genital mutilation (FGM) in the UK is:", "A": "Legal in private clinics", "B": "Illegal and a serious criminal offence", "C": "Permitted for religious reasons", "D": "Legal for adults only", "correct": "B", "why": "FGM is illegal in the UK and it is also an offence to take someone abroad for the procedure.", "diff": "MEDIUM"}, {"id": "q25", "ch": "values", "text": "Which of these best reflects the British value of tolerance?", "A": "Insisting everyone follows the same religion", "B": "Accepting people's right to live according to their own beliefs, within the law", "C": "Avoiding contact with people of other faiths", "D": "Requiring visitors to convert before entering the UK", "correct": "B", "why": "Tolerance means accepting the right of others to live by their own beliefs and traditions, as long as they act within the law.", "diff": "EASY"}, {"id": "q26", "ch": "values", "text": "Which of these is an example of exercising individual liberty responsibly?", "A": "Choosing your own career and religion, while respecting others' rights to do the same", "B": "Doing anything you like regardless of the law", "C": "Preventing others from expressing their opinions", "D": "Refusing to let your children go to school", "correct": "A", "why": "Individual liberty means making your own choices within the law, while also respecting other people's equal right to do the same.", "diff": "MEDIUM"}, {"id": "q27", "ch": "values", "text": "A key expectation for anyone settling in the UK is to:", "A": "Learn about and respect British history and traditions", "B": "Abandon their own cultural background entirely", "C": "Only socialise with people from their own country", "D": "Avoid all involvement with local government", "correct": "A", "why": "Settling successfully involves learning about and respecting UK traditions and institutions, while people are still free to keep their own heritage.", "diff": "MEDIUM"}, {"id": "q28", "ch": "values", "text": "Which of the following is protected under UK equality law?", "A": "Support for a political party", "B": "Religion or belief", "C": "Preference in music", "D": "Choice of holiday destination", "correct": "B", "why": "Religion or belief is one of the protected characteristics under the Equality Act 2010, alongside race, sex, age, disability and others.", "diff": "MEDIUM"}, {"id": "q29", "ch": "values", "text": "What does 'freedom of the press' mean in the UK?", "A": "Newspapers can print anything without any legal restriction", "B": "The media can report and criticise government and public figures, within the law", "C": "Only state-approved newspapers may publish", "D": "Journalists must have government permission for every article", "correct": "B", "why": "A free press can investigate, report and criticise those in power, though it remains subject to laws such as those on defamation.", "diff": "MEDIUM"}, {"id": "q30", "ch": "values", "text": "Which of these describes an important part of British civic life?", "A": "Independent courts that are not controlled by the government", "B": "Courts that follow direct orders from the Prime Minister", "C": "No right to appeal a court decision", "D": "Judges appointed only by the monarch personally", "correct": "A", "why": "Judicial independence — courts operating free from political control — is a cornerstone of the rule of law in the UK.", "diff": "MEDIUM"}, {"id": "q31", "ch": "values", "text": "In the UK, honour-based violence, such as punishing a family member for 'dishonouring' the family, is:", "A": "A private cultural matter", "B": "A serious criminal offence", "C": "Legal if agreed by the family", "D": "Only a civil matter", "correct": "B", "why": "So-called honour-based violence is treated as a serious crime in the UK, regardless of any cultural or family justification.", "diff": "MEDIUM"}, {"id": "q32", "ch": "values", "text": "Which best describes the UK's stance on child marriage?", "A": "It is fully legal from birth", "B": "Marriage before 18 is restricted and forced marriage of a minor is a serious offence", "C": "It is required at age 16", "D": "There is no minimum age", "correct": "B", "why": "UK law restricts marriage below 18, and forcing a child into marriage is a criminal offence.", "diff": "MEDIUM"}, {"id": "q33", "ch": "values", "text": "Being a good citizen in the UK includes:", "A": "Avoiding jury duty whenever summoned", "B": "Registering to vote and taking part in elections when eligible", "C": "Refusing to report crimes", "D": "Ignoring local council consultations", "correct": "B", "why": "Registering to vote and participating in elections is one of the clearest ways to exercise the civic responsibilities expected of residents.", "diff": "EASY"}, {"id": "q34", "ch": "values", "text": "Which statement about equality between men and women in the UK is correct?", "A": "Men and women have equal rights under the law", "B": "Only men can own property", "C": "Women cannot vote in general elections", "D": "Only men can hold public office", "correct": "A", "why": "Men and women have equal legal rights in the UK, including in employment, property ownership, and standing for public office.", "diff": "EASY"}, {"id": "q35", "ch": "values", "text": "Which of these is true about LGBT rights in the UK?", "A": "Same-sex relationships are illegal", "B": "Discrimination based on sexual orientation is against the law", "C": "Same-sex marriage is not recognised anywhere in the UK", "D": "LGBT people cannot serve in the armed forces", "correct": "B", "why": "UK law protects people from discrimination based on sexual orientation, and same-sex marriage is legally recognised in Great Britain.", "diff": "MEDIUM"}, {"id": "q36", "ch": "values", "text": "What is expected of parents living in the UK regarding their children's education?", "A": "Nothing, education is entirely optional", "B": "Ensuring their children of compulsory school age receive an education", "C": "Only sending sons to school", "D": "Paying a fee for state education", "correct": "B", "why": "Parents are legally required to ensure children of compulsory school age receive a suitable full-time education.", "diff": "MEDIUM"}, {"id": "q37", "ch": "values", "text": "Volunteering for a local charity shop is an example of:", "A": "Breaking the law", "B": "Participating in community life", "C": "A paid occupation only", "D": "A legal requirement for residency", "correct": "B", "why": "Volunteering, such as helping at a charity shop or community centre, is a common and valued form of community participation.", "diff": "EASY"}, {"id": "q38", "ch": "values", "text": "Which of these is a responsibility associated with driving in the UK?", "A": "Driving without insurance if you are careful", "B": "Following the Highway Code and driving safely", "C": "Ignoring speed limits on empty roads", "D": "Only wearing a seatbelt on motorways", "correct": "B", "why": "Drivers are expected to follow the Highway Code, drive safely, and hold valid insurance at all times, not only on certain roads.", "diff": "EASY"}, {"id": "q39", "ch": "values", "text": "Why is jury service considered an important civic duty?", "A": "It lets ordinary citizens take part in the justice system", "B": "It is optional and rarely happens", "C": "Only lawyers can serve on a jury", "D": "It replaces the need for judges", "correct": "A", "why": "Jury service allows members of the public to directly participate in delivering justice, reflecting a citizen-led legal tradition.", "diff": "MEDIUM"}, {"id": "q40", "ch": "values", "text": "Which best describes the UK's approach to press and broadcasting impartiality?", "A": "Broadcasters have no rules at all", "B": "Broadcasters such as the BBC are expected to be impartial in news coverage", "C": "Only government-run channels may broadcast news", "D": "Impartiality rules apply only to newspapers", "correct": "B", "why": "UK broadcasters, particularly the BBC, operate under a duty of impartiality in news and current affairs reporting.", "diff": "HARD"}, {"id": "q41", "ch": "whatis", "text": "Which nations make up the United Kingdom?", "A": "England, Scotland, Wales and the Republic of Ireland", "B": "England, Scotland, Wales and Northern Ireland", "C": "England, Scotland and Wales only", "D": "Great Britain and the Channel Islands", "correct": "B", "why": "The UK consists of England, Scotland, Wales and Northern Ireland. The Republic of Ireland is a separate, independent country.", "diff": "EASY"}, {"id": "q42", "ch": "whatis", "text": "What does the term 'Great Britain' refer to?", "A": "England, Scotland and Wales", "B": "The whole United Kingdom", "C": "England and Wales only", "D": "The UK plus the Channel Islands", "correct": "A", "why": "Great Britain refers to England, Scotland and Wales — it does not include Northern Ireland.", "diff": "MEDIUM"}, {"id": "q43", "ch": "whatis", "text": "What is the capital city of Wales?", "A": "Swansea", "B": "Newport", "C": "Cardiff", "D": "Wrexham", "correct": "C", "why": "Cardiff is the capital city of Wales.", "diff": "EASY"}, {"id": "q44", "ch": "whatis", "text": "What is the capital city of Scotland?", "A": "Glasgow", "B": "Edinburgh", "C": "Aberdeen", "D": "Dundee", "correct": "B", "why": "Edinburgh is the capital city of Scotland, though Glasgow is the largest city.", "diff": "EASY"}, {"id": "q45", "ch": "whatis", "text": "What is the capital city of Northern Ireland?", "A": "Londonderry", "B": "Belfast", "C": "Armagh", "D": "Bangor", "correct": "B", "why": "Belfast is the capital city of Northern Ireland.", "diff": "EASY"}, {"id": "q46", "ch": "whatis", "text": "The Crown Dependencies include the Isle of Man and:", "A": "The Falkland Islands", "B": "Gibraltar", "C": "The Channel Islands", "D": "Bermuda", "correct": "C", "why": "The Crown Dependencies are the Isle of Man and the Channel Islands. They are not part of the UK, but the UK is responsible for their defence and international relations.", "diff": "HARD"}, {"id": "q47", "ch": "whatis", "text": "Which sea lies between Great Britain and the island of Ireland?", "A": "The North Sea", "B": "The Irish Sea", "C": "The English Channel", "D": "The Celtic Sea", "correct": "B", "why": "The Irish Sea separates Great Britain from the island of Ireland.", "diff": "MEDIUM"}, {"id": "q48", "ch": "whatis", "text": "What is the longest river in the UK?", "A": "The Thames", "B": "The Severn", "C": "The Trent", "D": "The Clyde", "correct": "B", "why": "The River Severn is the longest river in the UK, flowing through Wales and England.", "diff": "MEDIUM"}, {"id": "q49", "ch": "whatis", "text": "Which is the highest mountain in the UK?", "A": "Snowdon", "B": "Scafell Pike", "C": "Ben Nevis", "D": "Slieve Donard", "correct": "C", "why": "Ben Nevis in Scotland is the highest mountain in the UK.", "diff": "MEDIUM"}, {"id": "q50", "ch": "whatis", "text": "Which flower is traditionally associated with England?", "A": "The daffodil", "B": "The thistle", "C": "The rose", "D": "The shamrock", "correct": "C", "why": "The rose is the flower associated with England; Wales has the daffodil, Scotland the thistle and Northern Ireland the shamrock.", "diff": "EASY"}, {"id": "q51", "ch": "whatis", "text": "Which flower or plant is associated with Wales?", "A": "The rose", "B": "The daffodil (and the leek)", "C": "The thistle", "D": "The shamrock", "correct": "B", "why": "The daffodil and the leek are both national emblems of Wales.", "diff": "EASY"}, {"id": "q52", "ch": "whatis", "text": "Which plant is associated with Scotland?", "A": "The rose", "B": "The daffodil", "C": "The thistle", "D": "The shamrock", "correct": "C", "why": "The thistle is the national emblem of Scotland.", "diff": "EASY"}, {"id": "q53", "ch": "whatis", "text": "The Union Flag is made up of the crosses of which three saints?", "A": "St George, St Andrew and St Patrick", "B": "St George, St David and St Patrick", "C": "St Andrew, St David and St Patrick", "D": "St George, St Andrew and St David", "correct": "A", "why": "The Union Flag combines the crosses of St George (England), St Andrew (Scotland) and St Patrick (Ireland). Wales is not separately represented.", "diff": "MEDIUM"}, {"id": "q54", "ch": "whatis", "text": "Which country of the UK is NOT represented on the Union Flag?", "A": "England", "B": "Scotland", "C": "Wales", "D": "Northern Ireland", "correct": "C", "why": "Wales is not represented on the Union Flag, as it was already united with England when the flag was created.", "diff": "MEDIUM"}, {"id": "q55", "ch": "whatis", "text": "Approximately what share of the UK population lives in England?", "A": "About 50%", "B": "About 65%", "C": "About 84%", "D": "About 95%", "correct": "C", "why": "England makes up roughly 84% of the UK population, with Scotland around 8%, Wales around 5% and Northern Ireland under 3%.", "diff": "MEDIUM"}, {"id": "q56", "ch": "whatis", "text": "What is the official language of the UK?", "A": "English", "B": "Welsh", "C": "Gaelic", "D": "There is no official language", "correct": "A", "why": "English is the main language of the UK, though Welsh, Scottish Gaelic and Irish are also spoken and officially supported in parts of the UK.", "diff": "EASY"}, {"id": "q57", "ch": "whatis", "text": "In which part of the UK is Welsh widely spoken and taught in schools?", "A": "Northern Ireland", "B": "Wales", "C": "Cornwall", "D": "The Isle of Man", "correct": "B", "why": "Welsh is spoken widely in Wales and is taught in schools there; it has official status alongside English in Wales.", "diff": "EASY"}, {"id": "q58", "ch": "whatis", "text": "Scottish Gaelic is mainly spoken in which area?", "A": "The Scottish Highlands and Islands", "B": "The Scottish Borders", "C": "Central Glasgow", "D": "Northern England", "correct": "A", "why": "Scottish Gaelic is spoken mainly in the Highlands and Islands of Scotland.", "diff": "MEDIUM"}, {"id": "q59", "ch": "whatis", "text": "Which of these is a British Overseas Territory rather than part of the UK?", "A": "The Isle of Wight", "B": "Gibraltar", "C": "Anglesey", "D": "The Isle of Skye", "correct": "B", "why": "Gibraltar is a British Overseas Territory. The Isle of Wight, Anglesey and Skye are all part of the UK.", "diff": "MEDIUM"}, {"id": "q60", "ch": "whatis", "text": "Snowdon (Yr Wyddfa) is the highest mountain in which country?", "A": "Scotland", "B": "Wales", "C": "England", "D": "Northern Ireland", "correct": "B", "why": "Snowdon, or Yr Wyddfa, is the highest mountain in Wales.", "diff": "EASY"}, {"id": "q61", "ch": "whatis", "text": "Which is the largest city in the UK by population?", "A": "Birmingham", "B": "Manchester", "C": "London", "D": "Glasgow", "correct": "C", "why": "London is by far the largest city in the UK and is its capital.", "diff": "EASY"}, {"id": "q62", "ch": "whatis", "text": "Loch Lomond and the Trossachs National Park is located in:", "A": "The west of Scotland", "B": "The east of Scotland", "C": "North Wales", "D": "The Lake District", "correct": "A", "why": "Loch Lomond and the Trossachs National Park lies in the west of Scotland.", "diff": "MEDIUM"}, {"id": "q63", "ch": "whatis", "text": "Which body of water separates England from France?", "A": "The Irish Sea", "B": "The English Channel", "C": "The North Sea", "D": "The Bristol Channel", "correct": "B", "why": "The English Channel separates southern England from northern France.", "diff": "EASY"}, {"id": "q64", "ch": "whatis", "text": "The Giant's Causeway is a famous natural landmark in:", "A": "Scotland", "B": "Wales", "C": "Northern Ireland", "D": "Cornwall", "correct": "C", "why": "The Giant's Causeway, with its distinctive basalt columns, is on the north coast of Northern Ireland.", "diff": "MEDIUM"}, {"id": "q65", "ch": "whatis", "text": "Which of these is a currency used in the UK?", "A": "The euro", "B": "The pound sterling", "C": "The dollar", "D": "The krona", "correct": "B", "why": "The currency of the UK is the pound sterling (£), divided into 100 pence.", "diff": "EASY"}, {"id": "q66", "ch": "whatis", "text": "Scotland and Northern Ireland:", "A": "Use only Bank of England notes", "B": "Can issue their own banknotes", "C": "Use the euro", "D": "Have no banknotes", "correct": "B", "why": "Banks in Scotland and Northern Ireland are permitted to issue their own banknotes, which are valid across the UK.", "diff": "MEDIUM"}, {"id": "q67", "ch": "whatis", "text": "Which mountain range runs through northern England and is sometimes called the 'backbone of England'?", "A": "The Cairngorms", "B": "The Pennines", "C": "The Cambrian Mountains", "D": "The Mournes", "correct": "B", "why": "The Pennines run through northern England and are often described as the backbone of England.", "diff": "MEDIUM"}, {"id": "q68", "ch": "whatis", "text": "The Lake District, a popular national park, is in which part of England?", "A": "The south-east", "B": "The north-west", "C": "East Anglia", "D": "The Midlands", "correct": "B", "why": "The Lake District is in Cumbria, in the north-west of England.", "diff": "MEDIUM"}, {"id": "q69", "ch": "whatis", "text": "Which of these UK cities is furthest north?", "A": "Manchester", "B": "Aberdeen", "C": "Cardiff", "D": "Norwich", "correct": "B", "why": "Aberdeen, on the north-east coast of Scotland, is the furthest north of these cities.", "diff": "MEDIUM"}, {"id": "q70", "ch": "whatis", "text": "Northern Ireland shares a land border with:", "A": "Scotland", "B": "The Republic of Ireland", "C": "Wales", "D": "No other country", "correct": "B", "why": "Northern Ireland shares a land border with the Republic of Ireland — the UK's only land border with another country.", "diff": "EASY"}, {"id": "q71", "ch": "whatis", "text": "Which of these cities is in Northern Ireland?", "A": "Derry/Londonderry", "B": "Cardiff", "C": "Inverness", "D": "Plymouth", "correct": "A", "why": "Derry, also called Londonderry, is a major city in Northern Ireland.", "diff": "MEDIUM"}, {"id": "q72", "ch": "whatis", "text": "The Pennines are often described as:", "A": "The backbone of England", "B": "The garden of England", "C": "The heart of Wales", "D": "The highlands of Scotland", "correct": "A", "why": "The Pennine hills, running through northern England, are often called the 'backbone of England'.", "diff": "MEDIUM"}, {"id": "q73", "ch": "whatis", "text": "Which UK city is known for its university and famous punting on the river?", "A": "Cambridge", "B": "Liverpool", "C": "Leeds", "D": "Sheffield", "correct": "A", "why": "Cambridge is well known for its historic university and for punting on the River Cam.", "diff": "EASY"}, {"id": "q74", "ch": "whatis", "text": "Which two English cities are famously linked by football rivalry and are both major ports or industrial cities in the north-west?", "A": "Liverpool and Manchester", "B": "Bristol and Bath", "C": "York and Durham", "D": "Oxford and Cambridge", "correct": "A", "why": "Liverpool and Manchester are major cities in north-west England, both with strong historical and footballing identities.", "diff": "MEDIUM"}, {"id": "q75", "ch": "whatis", "text": "Approximately how many people live in the United Kingdom, according to recent estimates?", "A": "About 20 million", "B": "About 47 million", "C": "About 67 million", "D": "About 100 million", "correct": "C", "why": "The UK population is estimated at around 67 million people.", "diff": "MEDIUM"}, {"id": "q76", "ch": "whatis", "text": "Which of these best describes 'the Home Counties'?", "A": "Counties surrounding London", "B": "Counties in Scotland", "C": "Counties in Northern Ireland", "D": "Overseas territories", "correct": "A", "why": "The Home Counties are the counties surrounding London, such as Surrey, Kent and Essex.", "diff": "HARD"}, {"id": "q77", "ch": "whatis", "text": "Cornwall, known for its coastline and Cornish pasties, is located in:", "A": "South-west England", "B": "North Wales", "C": "Eastern Scotland", "D": "Northern Ireland", "correct": "A", "why": "Cornwall is a county in the far south-west of England.", "diff": "EASY"}, {"id": "q78", "ch": "whatis", "text": "East Anglia, known for its flat farmland, includes which counties?", "A": "Norfolk and Suffolk", "B": "Kent and Sussex", "C": "Yorkshire and Durham", "D": "Powys and Gwynedd", "correct": "A", "why": "East Anglia in the east of England includes Norfolk and Suffolk, known for agriculture.", "diff": "MEDIUM"}, {"id": "q79", "ch": "whatis", "text": "The Severn Bridge connects England with which country?", "A": "Scotland", "B": "Wales", "C": "Northern Ireland", "D": "The Isle of Man", "correct": "B", "why": "The Severn Bridge crosses the River Severn estuary, connecting England and Wales.", "diff": "MEDIUM"}, {"id": "q80", "ch": "whatis", "text": "Which UK city is famous for the Angel of the North sculpture nearby?", "A": "Newcastle upon Tyne", "B": "Leeds", "C": "Southampton", "D": "Norwich", "correct": "A", "why": "The Angel of the North, a large sculpture by Antony Gormley, stands near Gateshead, close to Newcastle.", "diff": "MEDIUM"}, {"id": "q81", "ch": "whatis", "text": "The Shetland and Orkney Islands lie off the coast of:", "A": "Northern Scotland", "B": "Southern England", "C": "Northern Ireland", "D": "Wales", "correct": "A", "why": "Shetland and Orkney are island groups off the north coast of Scotland.", "diff": "MEDIUM"}, {"id": "q82", "ch": "whatis", "text": "Which of these best describes Anglesey?", "A": "An island off the coast of north Wales", "B": "A region of Scotland", "C": "A city in Northern Ireland", "D": "A national park in England", "correct": "A", "why": "Anglesey is an island off the north-west coast of Wales, connected by bridges to the mainland.", "diff": "MEDIUM"}, {"id": "q83", "ch": "whatis", "text": "The Peak District, a popular national park, is mainly located in which part of England?", "A": "The north-west", "B": "Central/northern England, spanning Derbyshire", "C": "The far south-east", "D": "East Anglia", "correct": "B", "why": "The Peak District lies largely in Derbyshire and neighbouring counties in central/northern England.", "diff": "MEDIUM"}, {"id": "q84", "ch": "whatis", "text": "Which of the following is the name for the UK's overseas territory near the southern tip of Spain?", "A": "Malta", "B": "Gibraltar", "C": "Cyprus", "D": "The Falklands", "correct": "B", "why": "Gibraltar, at the southern tip of Spain, is a British Overseas Territory.", "diff": "MEDIUM"}, {"id": "q85", "ch": "whatis", "text": "The White Cliffs, a well-known coastal landmark, are located near which town?", "A": "Dover", "B": "Brighton", "C": "Blackpool", "D": "Aberystwyth", "correct": "A", "why": "The White Cliffs of Dover are a famous chalk cliff formation on the English south coast.", "diff": "EASY"}, {"id": "q86", "ch": "history1", "text": "Skara Brae, the best-preserved prehistoric village in northern Europe, is located on:", "A": "Anglesey", "B": "Orkney", "C": "The Isle of Wight", "D": "Jersey", "correct": "B", "why": "Skara Brae is on Orkney, off the north coast of Scotland, and dates from the Stone Age.", "diff": "MEDIUM"}, {"id": "q87", "ch": "history1", "text": "Stonehenge, in Wiltshire, dates from which period?", "A": "The Bronze Age", "B": "The Roman period", "C": "The Middle Ages", "D": "The Victorian era", "correct": "A", "why": "Stonehenge was built in the Bronze Age, though work on the site began earlier in the Stone Age.", "diff": "MEDIUM"}, {"id": "q88", "ch": "history1", "text": "Who led the Roman invasion of Britain in AD 43?", "A": "Julius Caesar", "B": "Emperor Claudius", "C": "Emperor Hadrian", "D": "Boudicca", "correct": "B", "why": "Although Julius Caesar led earlier raids, the successful Roman invasion of Britain took place in AD 43 under Emperor Claudius.", "diff": "MEDIUM"}, {"id": "q89", "ch": "history1", "text": "Hadrian's Wall was built to:", "A": "Divide England from Wales", "B": "Keep out the Picts from the north", "C": "Protect London from invasion", "D": "Mark the edge of Cornwall", "correct": "B", "why": "Hadrian's Wall was built on the orders of Emperor Hadrian to defend the Roman province from tribes in what is now Scotland.", "diff": "MEDIUM"}, {"id": "q90", "ch": "history1", "text": "Boudicca is remembered as:", "A": "A Roman governor of Britain", "B": "A queen of the Iceni who led a revolt against the Romans", "C": "A Norman noblewoman", "D": "A Tudor courtier", "correct": "B", "why": "Boudicca was queen of the Iceni tribe in eastern England and led an uprising against Roman rule.", "diff": "MEDIUM"}, {"id": "q91", "ch": "history1", "text": "Roman rule in Britain came to an end in around:", "A": "AD 43", "B": "AD 410", "C": "AD 1066", "D": "AD 1215", "correct": "B", "why": "Roman forces left Britain around AD 410 to defend other parts of the Roman Empire.", "diff": "MEDIUM"}, {"id": "q92", "ch": "history1", "text": "The Anglo-Saxons came to Britain from which region?", "A": "Northern Europe, including modern Germany and Denmark", "B": "Spain and Portugal", "C": "North Africa", "D": "Scandinavia only", "correct": "A", "why": "The Anglo-Saxons came from what is now northern Germany, Denmark and the Netherlands.", "diff": "MEDIUM"}, {"id": "q93", "ch": "history1", "text": "Which Anglo-Saxon king is famous for defending his kingdom against the Vikings?", "A": "King Canute", "B": "Alfred the Great", "C": "Harold Godwinson", "D": "Edward the Confessor", "correct": "B", "why": "Alfred the Great, king of Wessex, successfully resisted the Viking invasions and is the only English monarch called 'the Great'.", "diff": "MEDIUM"}, {"id": "q94", "ch": "history1", "text": "The Vikings first raided Britain from which countries?", "A": "Denmark and Norway", "B": "France and Spain", "C": "Italy and Greece", "D": "Poland and Russia", "correct": "A", "why": "Viking raiders came from Denmark and Norway, first attacking coastal settlements before later settling.", "diff": "MEDIUM"}, {"id": "q95", "ch": "history1", "text": "In which year did the Battle of Hastings take place?", "A": "1066", "B": "1215", "C": "1415", "D": "1605", "correct": "A", "why": "The Battle of Hastings took place in 1066, when William of Normandy defeated King Harold II.", "diff": "EASY"}, {"id": "q96", "ch": "history1", "text": "Who became king of England after the Battle of Hastings?", "A": "Harold Godwinson", "B": "William the Conqueror", "C": "Richard the Lionheart", "D": "Henry I", "correct": "B", "why": "William, Duke of Normandy — known as William the Conqueror — became king after his victory at Hastings.", "diff": "EASY"}, {"id": "q97", "ch": "history1", "text": "The Domesday Book was:", "A": "A record of English landholdings and people compiled for William the Conqueror", "B": "A book of religious prophecy", "C": "A list of Viking raids", "D": "The first English dictionary", "correct": "A", "why": "The Domesday Book was a survey of land, property and population across England, compiled in 1086.", "diff": "MEDIUM"}, {"id": "q98", "ch": "history1", "text": "Which document, sealed in 1215, established that the king was subject to the law?", "A": "The Bill of Rights", "B": "Magna Carta", "C": "The Act of Union", "D": "The Petition of Right", "correct": "B", "why": "Magna Carta, agreed by King John in 1215, established the principle that the monarch was not above the law.", "diff": "EASY"}, {"id": "q99", "ch": "history1", "text": "The Black Death arrived in Britain in the:", "A": "11th century", "B": "14th century", "C": "16th century", "D": "18th century", "correct": "B", "why": "The Black Death reached Britain in 1348, killing a large proportion of the population.", "diff": "MEDIUM"}, {"id": "q100", "ch": "history1", "text": "One social consequence of the Black Death was:", "A": "Labour shortages and higher wages for peasants", "B": "An immediate increase in population", "C": "The end of all farming", "D": "The invention of printing", "correct": "A", "why": "With a much smaller population, labour was scarce, so peasants could demand higher wages, and new social classes such as the gentry emerged.", "diff": "MEDIUM"}, {"id": "q101", "ch": "history1", "text": "The Hundred Years War was fought between England and:", "A": "Scotland", "B": "France", "C": "Spain", "D": "The Netherlands", "correct": "B", "why": "The Hundred Years War was a long conflict between England and France, ending in 1453.", "diff": "MEDIUM"}, {"id": "q102", "ch": "history1", "text": "At which 1415 battle did Henry V defeat the French?", "A": "Agincourt", "B": "Hastings", "C": "Bosworth", "D": "Bannockburn", "correct": "A", "why": "Henry V's army defeated a much larger French force at the Battle of Agincourt in 1415.", "diff": "MEDIUM"}, {"id": "q103", "ch": "history1", "text": "The Wars of the Roses were fought between the houses of:", "A": "Tudor and Stuart", "B": "Lancaster and York", "C": "Normandy and Anjou", "D": "Wessex and Mercia", "correct": "B", "why": "The Wars of the Roses were a civil war between the House of Lancaster (red rose) and the House of York (white rose).", "diff": "MEDIUM"}, {"id": "q104", "ch": "history1", "text": "Who became the first Tudor king after victory at the Battle of Bosworth Field in 1485?", "A": "Henry VIII", "B": "Richard III", "C": "Henry VII", "D": "Edward IV", "correct": "C", "why": "Henry Tudor defeated Richard III at Bosworth Field in 1485 and became Henry VII, founding the Tudor dynasty.", "diff": "MEDIUM"}, {"id": "q105", "ch": "history1", "text": "How many wives did Henry VIII have?", "A": "Two", "B": "Four", "C": "Six", "D": "Eight", "correct": "C", "why": "Henry VIII married six times: Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard and Catherine Parr.", "diff": "EASY"}, {"id": "q106", "ch": "history1", "text": "Why did Henry VIII break away from the Church of Rome?", "A": "To join the Viking faith", "B": "Because the Pope refused to annul his marriage to Catherine of Aragon", "C": "To abolish Christianity", "D": "To fund a war with Scotland", "correct": "B", "why": "When the Pope refused to annul his first marriage, Henry VIII broke with Rome and established the Church of England with himself as its head.", "diff": "MEDIUM"}, {"id": "q107", "ch": "history1", "text": "Elizabeth I was the daughter of Henry VIII and:", "A": "Catherine of Aragon", "B": "Anne Boleyn", "C": "Jane Seymour", "D": "Catherine Parr", "correct": "B", "why": "Elizabeth I was the daughter of Henry VIII and his second wife, Anne Boleyn.", "diff": "MEDIUM"}, {"id": "q108", "ch": "history1", "text": "The Spanish Armada was defeated during the reign of:", "A": "Henry VIII", "B": "Mary I", "C": "Elizabeth I", "D": "James I", "correct": "C", "why": "The Spanish Armada, sent to invade England, was defeated in 1588 during the reign of Elizabeth I.", "diff": "MEDIUM"}, {"id": "q109", "ch": "history1", "text": "William Shakespeare was born in which town?", "A": "Canterbury", "B": "Stratford-upon-Avon", "C": "York", "D": "Oxford", "correct": "B", "why": "Shakespeare was born in Stratford-upon-Avon in 1564.", "diff": "EASY"}, {"id": "q110", "ch": "history1", "text": "Which Scottish queen was executed during the reign of Elizabeth I?", "A": "Mary, Queen of Scots", "B": "Margaret Tudor", "C": "Anne of Denmark", "D": "Matilda", "correct": "A", "why": "Mary, Queen of Scots was held prisoner in England for many years and eventually executed in 1587.", "diff": "MEDIUM"}, {"id": "q111", "ch": "history1", "text": "The Acts of Union of 1707 united which kingdoms?", "A": "England and Ireland", "B": "England and Scotland", "C": "Scotland and Wales", "D": "Wales and Ireland", "correct": "B", "why": "The Acts of Union of 1707 joined the kingdoms of England (which already included Wales) and Scotland to form Great Britain.", "diff": "MEDIUM"}, {"id": "q112", "ch": "history1", "text": "The Gunpowder Plot of 1605 was an attempt to:", "A": "Blow up the Houses of Parliament and kill King James I", "B": "Burn down the Tower of London", "C": "Assassinate Elizabeth I", "D": "Sink the Spanish Armada", "correct": "A", "why": "Guy Fawkes and his fellow conspirators plotted to blow up Parliament and kill James I. The failure is marked each 5 November.", "diff": "EASY"}, {"id": "q113", "ch": "history1", "text": "The English Civil War of the 1640s was fought between:", "A": "Vikings and Saxons", "B": "Supporters of Parliament and supporters of the King", "C": "England and France", "D": "Catholics and Vikings", "correct": "B", "why": "The Civil War was fought between the Royalists (supporters of Charles I) and the Parliamentarians.", "diff": "MEDIUM"}, {"id": "q114", "ch": "history1", "text": "Which king was executed in 1649 following the English Civil War?", "A": "James I", "B": "Charles I", "C": "Charles II", "D": "Henry VIII", "correct": "B", "why": "Charles I was tried and executed in 1649, and England briefly became a republic.", "diff": "MEDIUM"}, {"id": "q115", "ch": "history1", "text": "Who ruled England as Lord Protector after the Civil War?", "A": "Oliver Cromwell", "B": "Sir Robert Walpole", "C": "William of Orange", "D": "Guy Fawkes", "correct": "A", "why": "Oliver Cromwell governed as Lord Protector during the period of republican rule known as the Commonwealth.", "diff": "MEDIUM"}, {"id": "q116", "ch": "history1", "text": "The restoration of the monarchy in 1660 brought which king to the throne?", "A": "James II", "B": "Charles II", "C": "William III", "D": "George I", "correct": "B", "why": "Charles II was invited back from exile in 1660 in what became known as the Restoration.", "diff": "MEDIUM"}, {"id": "q117", "ch": "history1", "text": "The Great Fire of London took place in which year?", "A": "1605", "B": "1666", "C": "1707", "D": "1815", "correct": "B", "why": "The Great Fire of London destroyed much of the city in 1666.", "diff": "MEDIUM"}, {"id": "q118", "ch": "history1", "text": "The 'Glorious Revolution' of 1688 resulted in:", "A": "William of Orange becoming king", "B": "The Roman conquest of Britain", "C": "The founding of the NHS", "D": "Scotland leaving the union", "correct": "A", "why": "James II was replaced by his daughter Mary and her husband William of Orange, in what became known as the Glorious Revolution.", "diff": "MEDIUM"}, {"id": "q119", "ch": "history2", "text": "Who is generally regarded as the first British Prime Minister?", "A": "Oliver Cromwell", "B": "Sir Robert Walpole", "C": "William Pitt", "D": "Duke of Wellington", "correct": "B", "why": "Sir Robert Walpole, in office from 1721 to 1742, is generally regarded as the first British Prime Minister.", "diff": "MEDIUM"}, {"id": "q120", "ch": "history2", "text": "The Bill of Rights of 1689 confirmed that:", "A": "The monarch could rule without Parliament", "B": "Parliament must be called regularly and elections must be free", "C": "Only nobles could vote", "D": "Judges were appointed by the Pope", "correct": "B", "why": "The Bill of Rights limited royal power, requiring regular Parliaments and free elections.", "diff": "MEDIUM"}, {"id": "q121", "ch": "history2", "text": "The Industrial Revolution began in Britain during which period?", "A": "The 12th century", "B": "The 18th and 19th centuries", "C": "The 20th century", "D": "The Roman period", "correct": "B", "why": "Britain was the first country to industrialise, from the 18th century into the 19th century.", "diff": "EASY"}, {"id": "q122", "ch": "history2", "text": "Which invention by James Watt was crucial to the Industrial Revolution?", "A": "The telephone", "B": "An improved steam engine", "C": "The light bulb", "D": "The aeroplane", "correct": "B", "why": "James Watt's improvements to the steam engine powered factories, mines and transport during the Industrial Revolution.", "diff": "MEDIUM"}, {"id": "q123", "ch": "history2", "text": "Richard Arkwright is best known for developing:", "A": "Efficient machinery and factory production in textiles", "B": "The steam locomotive", "C": "Penicillin", "D": "The telephone", "correct": "A", "why": "Arkwright was a pioneer of efficient textile machinery and the factory system of production.", "diff": "MEDIUM"}, {"id": "q124", "ch": "history2", "text": "The Battle of Trafalgar in 1805 was won by a British fleet commanded by:", "A": "The Duke of Wellington", "B": "Admiral Lord Nelson", "C": "Sir Francis Drake", "D": "Oliver Cromwell", "correct": "B", "why": "Admiral Lord Nelson defeated the combined French and Spanish fleets at Trafalgar, though he died in the battle.", "diff": "MEDIUM"}, {"id": "q125", "ch": "history2", "text": "Napoleon was finally defeated in 1815 at the Battle of:", "A": "Trafalgar", "B": "Waterloo", "C": "Agincourt", "D": "Culloden", "correct": "B", "why": "The Duke of Wellington, alongside allied forces, defeated Napoleon at Waterloo in 1815.", "diff": "EASY"}, {"id": "q126", "ch": "history2", "text": "The transatlantic slave trade was abolished by Parliament in:", "A": "1707", "B": "1807", "C": "1907", "D": "1997", "correct": "B", "why": "The Act abolishing the slave trade was passed in 1807; slavery itself was abolished throughout the British Empire in 1833.", "diff": "MEDIUM"}, {"id": "q127", "ch": "history2", "text": "William Wilberforce is remembered for:", "A": "Inventing the steam engine", "B": "Campaigning against the slave trade", "C": "Founding the Bank of England", "D": "Leading the Royal Navy", "correct": "B", "why": "William Wilberforce was a leading campaigner in Parliament for the abolition of the slave trade.", "diff": "MEDIUM"}, {"id": "q128", "ch": "history2", "text": "Which reformer is known as 'the Lady with the Lamp' for her work in nursing?", "A": "Emmeline Pankhurst", "B": "Florence Nightingale", "C": "Mary Seacole", "D": "Elizabeth Fry", "correct": "B", "why": "Florence Nightingale nursed soldiers in the Crimean War and is considered the founder of modern nursing.", "diff": "EASY"}, {"id": "q129", "ch": "history2", "text": "Mary Seacole is remembered for:", "A": "Founding the Scouts", "B": "Nursing wounded soldiers during the Crimean War", "C": "Discovering penicillin", "D": "Writing Jane Eyre", "correct": "B", "why": "Mary Seacole, born in Jamaica, travelled to the Crimea and cared for wounded soldiers, funding much of the work herself.", "diff": "MEDIUM"}, {"id": "q130", "ch": "history2", "text": "The Victorian era refers to the reign of which monarch?", "A": "Queen Anne", "B": "Queen Victoria", "C": "Queen Elizabeth I", "D": "Queen Mary", "correct": "B", "why": "The Victorian era covers the reign of Queen Victoria, from 1837 to 1901.", "diff": "EASY"}, {"id": "q131", "ch": "history2", "text": "The First World War lasted from:", "A": "1914 to 1918", "B": "1939 to 1945", "C": "1899 to 1902", "D": "1904 to 1910", "correct": "A", "why": "The First World War lasted from 1914 to 1918.", "diff": "EASY"}, {"id": "q132", "ch": "history2", "text": "The Second World War began in which year?", "A": "1914", "B": "1918", "C": "1939", "D": "1945", "correct": "C", "why": "The Second World War began in 1939 when Britain declared war on Germany following the invasion of Poland.", "diff": "EASY"}, {"id": "q133", "ch": "history2", "text": "Who was British Prime Minister for most of the Second World War?", "A": "Neville Chamberlain", "B": "Winston Churchill", "C": "Clement Attlee", "D": "Stanley Baldwin", "correct": "B", "why": "Winston Churchill became Prime Minister in 1940 and led Britain through most of the Second World War.", "diff": "EASY"}, {"id": "q134", "ch": "history2", "text": "The Battle of Britain in 1940 was fought:", "A": "At sea in the Atlantic", "B": "In the air over southern England", "C": "In the North African desert", "D": "In the streets of Berlin", "correct": "B", "why": "The Battle of Britain was an air campaign in which the RAF resisted the German Luftwaffe over southern England.", "diff": "MEDIUM"}, {"id": "q135", "ch": "history2", "text": "D-Day, the Allied landings in Normandy, took place in:", "A": "June 1944", "B": "September 1939", "C": "May 1945", "D": "August 1940", "correct": "A", "why": "The Allied invasion of Normandy began on 6 June 1944.", "diff": "MEDIUM"}, {"id": "q136", "ch": "history2", "text": "Which scientist discovered penicillin?", "A": "Isaac Newton", "B": "Alexander Fleming", "C": "Charles Darwin", "D": "Michael Faraday", "correct": "B", "why": "Alexander Fleming discovered penicillin in 1928, transforming the treatment of infection.", "diff": "EASY"}, {"id": "q137", "ch": "history2", "text": "Charles Darwin is best known for:", "A": "The theory of evolution by natural selection", "B": "Inventing the telephone", "C": "Discovering DNA's structure", "D": "Founding the Royal Society", "correct": "A", "why": "Darwin's work On the Origin of Species set out the theory of evolution by natural selection.", "diff": "EASY"}, {"id": "q138", "ch": "history2", "text": "Sir Isaac Newton is famous for his work on:", "A": "Gravity and the laws of motion", "B": "Vaccination", "C": "Radio waves", "D": "The steam engine", "correct": "A", "why": "Newton developed the laws of motion and the theory of gravity, among many other scientific contributions.", "diff": "EASY"}, {"id": "q139", "ch": "history2", "text": "The National Health Service was established in:", "A": "1918", "B": "1948", "C": "1968", "D": "1988", "correct": "B", "why": "The NHS was established in 1948, providing healthcare free at the point of use.", "diff": "EASY"}, {"id": "q140", "ch": "history2", "text": "Which politician is closely associated with founding the NHS?", "A": "Winston Churchill", "B": "Aneurin Bevan", "C": "Margaret Thatcher", "D": "Clement Attlee", "correct": "B", "why": "Aneurin Bevan, as Minister of Health, led the creation of the NHS in 1948.", "diff": "MEDIUM"}, {"id": "q141", "ch": "history2", "text": "The Suffragettes campaigned for:", "A": "Free school meals", "B": "Votes for women", "C": "Lower taxes", "D": "Independence for Wales", "correct": "B", "why": "The Suffragettes campaigned, sometimes militantly, for women's right to vote.", "diff": "EASY"}, {"id": "q142", "ch": "history2", "text": "Emmeline Pankhurst was a leading figure in:", "A": "The abolition of slavery", "B": "The women's suffrage movement", "C": "The trade union movement", "D": "The Reformation", "correct": "B", "why": "Emmeline Pankhurst founded the Women's Social and Political Union, a leading suffragette organisation.", "diff": "MEDIUM"}, {"id": "q143", "ch": "history2", "text": "Women in the UK gained the vote on the same terms as men in:", "A": "1918", "B": "1928", "C": "1945", "D": "1969", "correct": "B", "why": "Some women over 30 gained the vote in 1918; equal voting rights with men at age 21 followed in 1928.", "diff": "MEDIUM"}, {"id": "q144", "ch": "history2", "text": "The voting age in the UK was lowered from 21 to 18 in:", "A": "1918", "B": "1928", "C": "1969", "D": "1998", "correct": "C", "why": "The voting age was reduced to 18 in 1969.", "diff": "MEDIUM"}, {"id": "q145", "ch": "history2", "text": "After the Second World War, many people were invited to Britain to help rebuild the country from:", "A": "Australia and New Zealand only", "B": "the Caribbean, India and Pakistan", "C": "Scandinavia", "D": "South America", "correct": "B", "why": "Britain encouraged migration from the Caribbean, India, Pakistan and elsewhere to help address post-war labour shortages.", "diff": "MEDIUM"}, {"id": "q146", "ch": "history2", "text": "The 'Windrush' generation refers to people who arrived from:", "A": "The Caribbean", "B": "Poland", "C": "Ireland", "D": "Canada", "correct": "A", "why": "The name comes from the ship Empire Windrush, which brought workers from the Caribbean to Britain in 1948.", "diff": "MEDIUM"}, {"id": "q147", "ch": "history2", "text": "Sir Winston Churchill's famous wartime speeches were intended to:", "A": "Announce Britain's surrender", "B": "Inspire national resolve and morale", "C": "Declare war on the United States", "D": "Introduce rationing", "correct": "B", "why": "Churchill's speeches were designed to rally the country and sustain morale during the darkest periods of the war.", "diff": "EASY"}, {"id": "q148", "ch": "history2", "text": "The Channel Tunnel, linking the UK and France, opened in:", "A": "1974", "B": "1984", "C": "1994", "D": "2004", "correct": "C", "why": "The Channel Tunnel opened in 1994, connecting Folkestone in England with Coquelles in France.", "diff": "MEDIUM"}, {"id": "q149", "ch": "history2", "text": "Which UK Prime Minister was the first woman to hold the office?", "A": "Theresa May", "B": "Margaret Thatcher", "C": "Barbara Castle", "D": "Nancy Astor", "correct": "B", "why": "Margaret Thatcher became the UK's first female Prime Minister in 1979.", "diff": "EASY"}, {"id": "q150", "ch": "history2", "text": "The Good Friday Agreement of 1998 related to:", "A": "Scottish independence", "B": "Peace in Northern Ireland", "C": "Membership of the United Nations", "D": "Reform of the House of Lords", "correct": "B", "why": "The Good Friday (Belfast) Agreement was a major step in the Northern Ireland peace process.", "diff": "MEDIUM"}, {"id": "q151", "ch": "history2", "text": "Devolved governments were established in Scotland and Wales in:", "A": "1979", "B": "1989", "C": "1999", "D": "2009", "correct": "C", "why": "Following referendums in 1997, the Scottish Parliament and the National Assembly for Wales first met in 1999.", "diff": "MEDIUM"}, {"id": "q152", "ch": "history2", "text": "In which year did the UK hold a referendum on membership of the European Union?", "A": "2014", "B": "2015", "C": "2016", "D": "2017", "correct": "C", "why": "The referendum on the UK's membership of the European Union was held on 23 June 2016.", "diff": "MEDIUM"}, {"id": "q153", "ch": "history2", "text": "The Commonwealth is best described as:", "A": "A military alliance", "B": "An association of countries, most with historic links to Britain", "C": "A single currency zone", "D": "A European trading bloc", "correct": "B", "why": "The Commonwealth is a voluntary association of independent countries, most of which had historical ties to the British Empire.", "diff": "MEDIUM"}, {"id": "q154", "ch": "history2", "text": "Which British engineer designed bridges, railways and ships including the Great Western Railway?", "A": "James Watt", "B": "Isambard Kingdom Brunel", "C": "George Stephenson", "D": "Alexander Graham Bell", "correct": "B", "why": "Isambard Kingdom Brunel was a celebrated Victorian engineer responsible for the Great Western Railway and much else.", "diff": "MEDIUM"}, {"id": "q155", "ch": "history2", "text": "Alan Turing is remembered for:", "A": "Codebreaking in the Second World War and pioneering computer science", "B": "Discovering penicillin", "C": "Painting The Hay Wain", "D": "Composing Land of Hope and Glory", "correct": "A", "why": "Alan Turing helped break German codes at Bletchley Park and is regarded as a founder of modern computing.", "diff": "MEDIUM"}, {"id": "q156", "ch": "society", "text": "When is St George's Day, the patron saint's day of England?", "A": "1 March", "B": "17 March", "C": "23 April", "D": "30 November", "correct": "C", "why": "St George's Day is celebrated on 23 April in England.", "diff": "MEDIUM"}, {"id": "q157", "ch": "society", "text": "When is St David's Day, the patron saint's day of Wales?", "A": "1 March", "B": "17 March", "C": "23 April", "D": "30 November", "correct": "A", "why": "St David's Day is celebrated on 1 March in Wales.", "diff": "MEDIUM"}, {"id": "q158", "ch": "society", "text": "When is St Patrick's Day, the patron saint's day of Northern Ireland?", "A": "1 March", "B": "17 March", "C": "23 April", "D": "30 November", "correct": "B", "why": "St Patrick's Day is celebrated on 17 March.", "diff": "MEDIUM"}, {"id": "q159", "ch": "society", "text": "When is St Andrew's Day, the patron saint's day of Scotland?", "A": "1 March", "B": "17 March", "C": "23 April", "D": "30 November", "correct": "D", "why": "St Andrew's Day is celebrated on 30 November in Scotland.", "diff": "MEDIUM"}, {"id": "q160", "ch": "society", "text": "What is the established church in England?", "A": "The Roman Catholic Church", "B": "The Methodist Church", "C": "The Church of England", "D": "The Church of Scotland", "correct": "C", "why": "The Church of England is the established church in England, with the monarch as its Supreme Governor.", "diff": "MEDIUM"}, {"id": "q161", "ch": "society", "text": "The Church of England is known in Scotland and the United States as:", "A": "The Anglican Church and the Episcopal Church", "B": "The Presbyterian Church", "C": "The Baptist Church", "D": "The Orthodox Church", "correct": "A", "why": "The Church of England is called the Anglican Church in many countries and the Episcopal Church in Scotland and the USA.", "diff": "MEDIUM"}, {"id": "q162", "ch": "society", "text": "The national Church of Scotland is:", "A": "Anglican", "B": "Presbyterian", "C": "Roman Catholic", "D": "Methodist", "correct": "B", "why": "The Church of Scotland is a Presbyterian church, governed by ministers and elders.", "diff": "MEDIUM"}, {"id": "q163", "ch": "society", "text": "Remembrance Day, marking those who died in wars, is held on:", "A": "11 November", "B": "5 November", "C": "25 December", "D": "1 January", "correct": "A", "why": "Remembrance Day is 11 November, marking the end of the First World War in 1918. Poppies are worn.", "diff": "EASY"}, {"id": "q164", "ch": "society", "text": "Bonfire Night on 5 November commemorates:", "A": "The Great Fire of London", "B": "The failure of the Gunpowder Plot", "C": "The end of the Second World War", "D": "The Battle of Trafalgar", "correct": "B", "why": "Bonfire Night marks the failure of the 1605 Gunpowder Plot to blow up Parliament.", "diff": "EASY"}, {"id": "q165", "ch": "society", "text": "Hogmanay is the name given in Scotland to:", "A": "New Year's Eve", "B": "Christmas Day", "C": "Easter Sunday", "D": "Harvest festival", "correct": "A", "why": "Hogmanay is the Scottish celebration of New Year's Eve, often marked with major festivities.", "diff": "MEDIUM"}, {"id": "q166", "ch": "society", "text": "Which festival marks the beginning of Lent?", "A": "Ash Wednesday", "B": "Shrove Tuesday", "C": "Good Friday", "D": "Easter Monday", "correct": "A", "why": "Lent begins on Ash Wednesday, the day after Shrove Tuesday (Pancake Day).", "diff": "MEDIUM"}, {"id": "q167", "ch": "society", "text": "Diwali, the festival of lights, is celebrated by:", "A": "Hindus and Sikhs", "B": "Muslims only", "C": "Christians only", "D": "Jewish communities", "correct": "A", "why": "Diwali is celebrated by Hindus and Sikhs, and is widely marked in the UK.", "diff": "EASY"}, {"id": "q168", "ch": "society", "text": "Eid al-Fitr marks the end of:", "A": "Lent", "B": "Ramadan", "C": "Advent", "D": "Hanukkah", "correct": "B", "why": "Eid al-Fitr is celebrated by Muslims to mark the end of the fasting month of Ramadan.", "diff": "EASY"}, {"id": "q169", "ch": "society", "text": "Vaisakhi is a festival particularly important to:", "A": "Sikhs", "B": "Buddhists", "C": "Christians", "D": "Jewish communities", "correct": "A", "why": "Vaisakhi is a Sikh festival celebrated in April, marking the founding of the Khalsa.", "diff": "MEDIUM"}, {"id": "q170", "ch": "society", "text": "Which sport's modern rules were codified in England in the 19th century?", "A": "Association football", "B": "Basketball", "C": "Ice hockey", "D": "Sumo wrestling", "correct": "A", "why": "The Football Association was formed in England in 1863, codifying the modern rules of association football.", "diff": "EASY"}, {"id": "q171", "ch": "society", "text": "The Wimbledon Championships are associated with which sport?", "A": "Cricket", "B": "Tennis", "C": "Golf", "D": "Rowing", "correct": "B", "why": "Wimbledon is the oldest tennis tournament in the world and is held annually in London.", "diff": "EASY"}, {"id": "q172", "ch": "society", "text": "St Andrews in Scotland is famous as the home of:", "A": "Golf", "B": "Rugby", "C": "Cricket", "D": "Sailing", "correct": "A", "why": "St Andrews is widely regarded as the home of golf, which developed in Scotland.", "diff": "MEDIUM"}, {"id": "q173", "ch": "society", "text": "The Grand National is a famous annual event in:", "A": "Horse racing", "B": "Motor racing", "C": "Cycling", "D": "Sailing", "correct": "A", "why": "The Grand National is a celebrated horse race held at Aintree near Liverpool.", "diff": "MEDIUM"}, {"id": "q174", "ch": "society", "text": "Which UK city hosted the Olympic Games in 2012?", "A": "Manchester", "B": "London", "C": "Birmingham", "D": "Glasgow", "correct": "B", "why": "London hosted the Olympic and Paralympic Games in 2012.", "diff": "EASY"}, {"id": "q175", "ch": "society", "text": "Dame Kelly Holmes won two Olympic gold medals in 2004 for:", "A": "Swimming", "B": "Running", "C": "Cycling", "D": "Rowing", "correct": "B", "why": "Dame Kelly Holmes won gold in both the 800m and 1500m at the 2004 Olympic Games.", "diff": "MEDIUM"}, {"id": "q176", "ch": "society", "text": "Sir Chris Hoy is a celebrated British Olympian in which sport?", "A": "Cycling", "B": "Boxing", "C": "Sailing", "D": "Athletics", "correct": "A", "why": "Sir Chris Hoy is one of Britain's most successful Olympic cyclists.", "diff": "MEDIUM"}, {"id": "q177", "ch": "society", "text": "The Six Nations Championship is a competition in which sport?", "A": "Rugby union", "B": "Football", "C": "Cricket", "D": "Hockey", "correct": "A", "why": "The Six Nations is an annual rugby union tournament involving England, Scotland, Wales, Ireland, France and Italy.", "diff": "MEDIUM"}, {"id": "q178", "ch": "society", "text": "The Ashes is a famous cricket series between England and:", "A": "Australia", "B": "India", "C": "South Africa", "D": "New Zealand", "correct": "A", "why": "The Ashes is a long-running Test cricket rivalry between England and Australia.", "diff": "MEDIUM"}, {"id": "q179", "ch": "society", "text": "Which of these is the world's largest arts festival, held annually in Scotland?", "A": "The Edinburgh Festival Fringe", "B": "Glastonbury", "C": "The Proms", "D": "Notting Hill Carnival", "correct": "A", "why": "The Edinburgh Festival Fringe, held each August, is the world's largest arts festival.", "diff": "MEDIUM"}, {"id": "q180", "ch": "society", "text": "The Notting Hill Carnival is a celebration of:", "A": "Scottish heritage", "B": "Caribbean culture and communities", "C": "Norse traditions", "D": "Roman history", "correct": "B", "why": "The Notting Hill Carnival in London celebrates Caribbean culture and is one of Europe's largest street festivals.", "diff": "MEDIUM"}, {"id": "q181", "ch": "society", "text": "The BBC Proms is a major annual festival of:", "A": "Classical music", "B": "Modern dance", "C": "Film", "D": "Literature", "correct": "A", "why": "The Proms is an eight-week summer season of classical music concerts, mainly held at the Royal Albert Hall.", "diff": "MEDIUM"}, {"id": "q182", "ch": "society", "text": "The Turner Prize is awarded for achievement in:", "A": "Contemporary art", "B": "Poetry", "C": "Architecture", "D": "Film directing", "correct": "A", "why": "The Turner Prize is a prominent award for contemporary British art.", "diff": "MEDIUM"}, {"id": "q183", "ch": "society", "text": "Which of these authors wrote Pride and Prejudice?", "A": "Charlotte Brontë", "B": "Jane Austen", "C": "George Eliot", "D": "Virginia Woolf", "correct": "B", "why": "Jane Austen wrote Pride and Prejudice, published in 1813.", "diff": "EASY"}, {"id": "q184", "ch": "society", "text": "Robert Burns, known as 'The Bard', was a:", "A": "Scottish poet", "B": "Welsh composer", "C": "Irish playwright", "D": "English novelist", "correct": "A", "why": "Robert Burns was a Scottish poet, celebrated each January on Burns Night.", "diff": "MEDIUM"}, {"id": "q185", "ch": "society", "text": "Gilbert and Sullivan are best known for writing:", "A": "Comic operas", "B": "Symphonies", "C": "Detective novels", "D": "Landscape paintings", "correct": "A", "why": "Gilbert and Sullivan wrote comic operas including HMS Pinafore and The Pirates of Penzance.", "diff": "MEDIUM"}, {"id": "q186", "ch": "society", "text": "The BBC is funded principally by:", "A": "Advertising revenue", "B": "General taxation", "C": "The television licence fee", "D": "Private subscriptions only", "correct": "C", "why": "The BBC is chiefly funded by the television licence fee paid by households that watch or record live television.", "diff": "MEDIUM"}, {"id": "q187", "ch": "society", "text": "People aged over which age can apply for a free TV licence?", "A": "60", "B": "65", "C": "70", "D": "75", "correct": "D", "why": "A free TV licence is available to those over 75 who meet the qualifying conditions.", "diff": "MEDIUM"}, {"id": "q188", "ch": "society", "text": "The National Trust was founded to:", "A": "Preserve important buildings, countryside and coastline", "B": "Run the railways", "C": "Manage the NHS", "D": "Collect taxes", "correct": "A", "why": "The National Trust is a charity that protects historic places and green spaces for the nation.", "diff": "MEDIUM"}, {"id": "q189", "ch": "society", "text": "In the UK, pubs are generally permitted to open from:", "A": "6.00 am", "B": "11.00 am (noon on Sundays)", "C": "2.00 pm", "D": "6.00 pm", "correct": "B", "why": "Pubs commonly open from 11.00 am, with slightly later opening on Sundays, subject to their licence.", "diff": "MEDIUM"}, {"id": "q190", "ch": "society", "text": "The minimum age for buying alcohol in a UK pub or shop is:", "A": "16", "B": "17", "C": "18", "D": "21", "correct": "C", "why": "You must be 18 or over to buy alcohol in the UK.", "diff": "EASY"}, {"id": "q191", "ch": "society", "text": "Which of these is a famous UK music festival held in Somerset?", "A": "Glastonbury", "B": "Hogmanay", "C": "The Fringe", "D": "Eisteddfod", "correct": "A", "why": "Glastonbury Festival, held in Somerset, is one of the world's best-known music festivals.", "diff": "MEDIUM"}, {"id": "q192", "ch": "society", "text": "The Eisteddfod is a festival of music and poetry associated with:", "A": "Wales", "B": "Cornwall", "C": "Northern Ireland", "D": "The Isle of Man", "correct": "A", "why": "The Eisteddfod is a Welsh festival celebrating literature, music and performance, often conducted in Welsh.", "diff": "MEDIUM"}, {"id": "q193", "ch": "society", "text": "Which of these is a traditional food associated with Scotland?", "A": "Haggis", "B": "Welsh cakes", "C": "Ulster fry", "D": "Cornish pasty", "correct": "A", "why": "Haggis is a traditional Scottish dish, often served on Burns Night.", "diff": "EASY"}, {"id": "q194", "ch": "society", "text": "Sunday is traditionally a day when:", "A": "All shops must close", "B": "Many people relax and some attend religious services", "C": "Work is legally banned", "D": "Public transport does not run", "correct": "B", "why": "Sunday is traditionally a day of rest for many; some attend religious services, and shop opening hours may be shorter.", "diff": "EASY"}, {"id": "q195", "ch": "society", "text": "Which of these is a well-known UK charity activity people take part in?", "A": "Volunteering at a local food bank", "B": "Avoiding all community groups", "C": "Refusing to pay tax", "D": "Ignoring local elections", "correct": "A", "why": "Volunteering, including at food banks and charity shops, is a common way people contribute to community life.", "diff": "EASY"}, {"id": "q196", "ch": "society", "text": "Roughly what proportion of people in the UK identify with a religion, according to recent censuses?", "A": "Everyone", "B": "A substantial proportion, though many report no religion", "C": "Nobody", "D": "Only new arrivals", "correct": "B", "why": "The UK is religiously diverse: many people identify with a religion, while a large and growing number report no religion.", "diff": "MEDIUM"}, {"id": "q197", "ch": "society", "text": "Which of these is a UK national park?", "A": "The Lake District", "B": "Central Park", "C": "Hyde Park", "D": "The Black Forest", "correct": "A", "why": "The Lake District in Cumbria is one of the UK's national parks.", "diff": "EASY"}, {"id": "q198", "ch": "society", "text": "Which annual event involves a formal address by the monarch on Christmas Day?", "A": "The King's Christmas message", "B": "The State Opening of Parliament", "C": "Trooping the Colour", "D": "The Budget", "correct": "A", "why": "The monarch traditionally broadcasts a Christmas message to the UK and the Commonwealth.", "diff": "MEDIUM"}, {"id": "q199", "ch": "society", "text": "Trooping the Colour is an annual ceremony marking:", "A": "The monarch's official birthday", "B": "The opening of Parliament", "C": "Remembrance Day", "D": "The start of the football season", "correct": "A", "why": "Trooping the Colour is a military parade held in London to mark the monarch's official birthday.", "diff": "MEDIUM"}, {"id": "q200", "ch": "society", "text": "Which of these describes UK cinema's contribution?", "A": "Britain has produced internationally acclaimed films and actors", "B": "Britain has never made films", "C": "Films are banned in the UK", "D": "Only foreign films are shown", "correct": "A", "why": "The UK has a long and internationally respected film industry, with British studios flourishing from the 1930s onwards.", "diff": "EASY"}, {"id": "q201", "ch": "society", "text": "Which of these best describes multiculturalism in the UK today?", "A": "People of many different backgrounds live together in the same society", "B": "Only one culture is officially recognised", "C": "Cultural events from other countries are banned", "D": "Everyone must adopt identical customs", "correct": "A", "why": "The UK today is home to people of many different ethnic and cultural backgrounds living together.", "diff": "EASY"}, {"id": "q202", "ch": "society", "text": "Which of these is a well-known British soap opera format on television?", "A": "A long-running drama series about everyday life in a community", "B": "A daily news bulletin", "C": "A cookery competition only", "D": "A history documentary series", "correct": "A", "why": "Soap operas such as long-running dramas about community life are a well-established part of British television.", "diff": "MEDIUM"}, {"id": "q203", "ch": "society", "text": "Which musical genre is strongly associated with British bands of the 1960s such as The Beatles?", "A": "Pop and rock music", "B": "Opera", "C": "Classical symphonies", "D": "Traditional folk only", "correct": "A", "why": "The 1960s saw major British contributions to pop and rock music, led by bands such as The Beatles.", "diff": "EASY"}, {"id": "q204", "ch": "society", "text": "Which of these is a famous British comedy tradition?", "A": "Pantomime performed at Christmas", "B": "Formal state banquets", "C": "Silent religious processions", "D": "Government press conferences", "correct": "A", "why": "Pantomime, a comic theatrical tradition performed around Christmas, is a well-loved part of British culture.", "diff": "MEDIUM"}, {"id": "q205", "ch": "society", "text": "The Chelsea Flower Show is a major annual event showcasing:", "A": "Gardening and horticulture", "B": "Motor vehicles", "C": "Fashion design only", "D": "Technology start-ups", "correct": "A", "why": "The Chelsea Flower Show is a prestigious annual gardening and horticulture exhibition in London.", "diff": "MEDIUM"}, {"id": "q206", "ch": "society", "text": "Which of these best describes the role of volunteering in UK society?", "A": "It is illegal", "B": "It is widely encouraged and supports charities and communities", "C": "It is compulsory for all adults", "D": "Only foreign nationals can volunteer", "correct": "B", "why": "Volunteering is common and valued in the UK, supporting charities, hospitals, schools and community groups.", "diff": "EASY"}, {"id": "q207", "ch": "society", "text": "Which British author created the character Sherlock Holmes?", "A": "Arthur Conan Doyle", "B": "Charles Dickens", "C": "J.K. Rowling", "D": "Ian Fleming", "correct": "A", "why": "Sir Arthur Conan Doyle created the detective Sherlock Holmes.", "diff": "EASY"}, {"id": "q208", "ch": "society", "text": "Which British author is known for writing Oliver Twist and A Christmas Carol?", "A": "Charles Dickens", "B": "Jane Austen", "C": "Thomas Hardy", "D": "George Orwell", "correct": "A", "why": "Charles Dickens wrote many famous novels, including Oliver Twist and A Christmas Carol.", "diff": "EASY"}, {"id": "q209", "ch": "society", "text": "Which of these is an internationally famous British music festival known for its Pyramid Stage?", "A": "Glastonbury", "B": "The Fringe", "C": "Hogmanay", "D": "The Proms", "correct": "A", "why": "Glastonbury Festival, held in Somerset, is famous for its Pyramid Stage and major music line-ups.", "diff": "MEDIUM"}, {"id": "q210", "ch": "society", "text": "Sport England, UK Sport and similar bodies exist to:", "A": "Promote and support sport and physical activity", "B": "Control the price of football tickets", "C": "Select the Prime Minister", "D": "Run the National Lottery entirely", "correct": "A", "why": "Bodies such as Sport England work to promote participation and success in sport across the UK.", "diff": "MEDIUM"}, {"id": "q211", "ch": "govt1", "text": "The UK is best described as a:", "A": "Absolute monarchy", "B": "Parliamentary democracy with a constitutional monarch", "C": "Republic", "D": "Military dictatorship", "correct": "B", "why": "The UK is a parliamentary democracy with a constitutional monarch as head of state.", "diff": "EASY"}, {"id": "q212", "ch": "govt1", "text": "Who is the head of state of the UK?", "A": "The Prime Minister", "B": "The monarch", "C": "The Speaker of the House of Commons", "D": "The Lord Chancellor", "correct": "B", "why": "The monarch is head of state, while the Prime Minister is head of government.", "diff": "EASY"}, {"id": "q213", "ch": "govt1", "text": "What is the maximum period between UK general elections?", "A": "Three years", "B": "Four years", "C": "Five years", "D": "Seven years", "correct": "C", "why": "A general election must be held at least every five years.", "diff": "MEDIUM"}, {"id": "q214", "ch": "govt1", "text": "Members of the House of Commons are known as:", "A": "Peers", "B": "MPs", "C": "Councillors", "D": "Magistrates", "correct": "B", "why": "Members of Parliament (MPs) are elected to represent constituencies in the House of Commons.", "diff": "EASY"}, {"id": "q215", "ch": "govt1", "text": "How many constituencies is the UK divided into for general elections?", "A": "About 100", "B": "About 300", "C": "About 650", "D": "About 1,000", "correct": "C", "why": "The UK is divided into around 650 parliamentary constituencies, each electing one MP.", "diff": "MEDIUM"}, {"id": "q216", "ch": "govt1", "text": "The system used to elect MPs in UK general elections is called:", "A": "Proportional representation", "B": "First past the post", "C": "Single transferable vote", "D": "Alternative vote", "correct": "B", "why": "UK general elections use the first past the post system: the candidate with the most votes in a constituency wins.", "diff": "MEDIUM"}, {"id": "q217", "ch": "govt1", "text": "The official home of the Prime Minister is:", "A": "Buckingham Palace", "B": "10 Downing Street", "C": "Windsor Castle", "D": "The Tower of London", "correct": "B", "why": "The Prime Minister's official residence is 10 Downing Street in central London; Chequers is the country residence.", "diff": "EASY"}, {"id": "q218", "ch": "govt1", "text": "The House of Lords is made up of:", "A": "Elected MPs", "B": "Peers, including life peers and bishops", "C": "Local councillors", "D": "Judges only", "correct": "B", "why": "The House of Lords consists of peers, including life peers, some hereditary peers and Church of England bishops.", "diff": "MEDIUM"}, {"id": "q219", "ch": "govt1", "text": "What is the main role of the House of Lords?", "A": "To elect the Prime Minister", "B": "To scrutinise and suggest amendments to legislation", "C": "To set council tax", "D": "To try criminal cases", "correct": "B", "why": "The Lords reviews legislation passed by the Commons, scrutinises it and can suggest amendments.", "diff": "MEDIUM"}, {"id": "q220", "ch": "govt1", "text": "The Speaker of the House of Commons is responsible for:", "A": "Leading the governing party", "B": "Keeping order during debates and remaining politically neutral", "C": "Appointing judges", "D": "Setting the Budget", "correct": "B", "why": "The Speaker chairs debates, keeps order, and must be politically impartial.", "diff": "MEDIUM"}, {"id": "q221", "ch": "govt1", "text": "The minimum voting age in UK general elections is:", "A": "16", "B": "17", "C": "18", "D": "21", "correct": "C", "why": "You must be 18 or over to vote in a UK general election, though 16 and 17 year olds can vote in some devolved elections.", "diff": "EASY"}, {"id": "q222", "ch": "govt1", "text": "To vote in an election you must:", "A": "Own property", "B": "Be on the electoral register", "C": "Belong to a political party", "D": "Have lived in the UK for 20 years", "correct": "B", "why": "You must be registered on the electoral register to vote in UK elections.", "diff": "EASY"}, {"id": "q223", "ch": "govt1", "text": "The Scottish Parliament meets at:", "A": "Holyrood in Edinburgh", "B": "Stormont in Belfast", "C": "Westminster in London", "D": "Cardiff Bay", "correct": "A", "why": "Members of the Scottish Parliament (MSPs) meet at Holyrood in Edinburgh.", "diff": "MEDIUM"}, {"id": "q224", "ch": "govt1", "text": "The Northern Ireland Assembly meets at:", "A": "Holyrood", "B": "Stormont", "C": "Westminster", "D": "The Senedd", "correct": "B", "why": "The Northern Ireland Assembly meets at Stormont in Belfast.", "diff": "MEDIUM"}, {"id": "q225", "ch": "govt1", "text": "The Welsh Parliament building in Cardiff Bay is known as:", "A": "The Senedd", "B": "Holyrood", "C": "Stormont", "D": "Westminster", "correct": "A", "why": "The Senedd is the home of the Welsh Parliament in Cardiff Bay.", "diff": "MEDIUM"}, {"id": "q226", "ch": "govt1", "text": "Which of these is a devolved matter in Scotland?", "A": "Defence", "B": "Foreign policy", "C": "Education", "D": "Immigration", "correct": "C", "why": "Education is devolved to Scotland, while defence, foreign policy and immigration remain reserved to the UK Parliament.", "diff": "MEDIUM"}, {"id": "q227", "ch": "govt1", "text": "Which of these remains the responsibility of the UK Parliament rather than devolved administrations?", "A": "Health in Wales", "B": "Defence and foreign affairs", "C": "Education in Scotland", "D": "Local roads in Northern Ireland", "correct": "B", "why": "Defence, foreign affairs, immigration and national security are reserved matters handled by the UK Parliament.", "diff": "MEDIUM"}, {"id": "q228", "ch": "govt1", "text": "The civil service is expected to be:", "A": "Politically neutral and professional", "B": "Loyal only to one party", "C": "Elected by the public", "D": "Appointed by the monarch personally", "correct": "A", "why": "Civil servants are politically neutral professionals who serve the government of the day.", "diff": "MEDIUM"}, {"id": "q229", "ch": "govt2", "text": "Which court in England and Wales deals with the most serious criminal cases?", "A": "The Magistrates' Court", "B": "The Crown Court", "C": "The County Court", "D": "The Small Claims Court", "correct": "B", "why": "Serious criminal cases in England and Wales are tried in the Crown Court before a judge and jury.", "diff": "MEDIUM"}, {"id": "q230", "ch": "govt2", "text": "Minor criminal cases in England and Wales are usually heard in:", "A": "The Crown Court", "B": "The Magistrates' Court", "C": "The Supreme Court", "D": "The Court of Appeal", "correct": "B", "why": "Most minor criminal cases are heard by magistrates, who are usually unpaid volunteers from the local community.", "diff": "MEDIUM"}, {"id": "q231", "ch": "govt2", "text": "In Scotland, minor criminal cases are heard in:", "A": "The Magistrates' Court", "B": "The Justice of the Peace Court", "C": "The Crown Court", "D": "The County Court", "correct": "B", "why": "Scotland has a separate legal system; minor cases are heard in Justice of the Peace Courts, with more serious cases in the Sheriff Court or High Court.", "diff": "HARD"}, {"id": "q232", "ch": "govt2", "text": "Cases involving personal injury, debt and divorce in England and Wales are usually heard in:", "A": "The Crown Court", "B": "County Courts", "C": "The Magistrates' Court", "D": "The Old Bailey", "correct": "B", "why": "County Courts deal with a wide range of civil disputes including debt, personal injury, contract and family matters.", "diff": "MEDIUM"}, {"id": "q233", "ch": "govt2", "text": "In Scotland, most civil disputes are handled in:", "A": "The Sheriff Court", "B": "The County Court", "C": "The Magistrates' Court", "D": "The Crown Court", "correct": "A", "why": "The Sheriff Court handles most civil matters in Scotland.", "diff": "MEDIUM"}, {"id": "q234", "ch": "govt2", "text": "Which court deals with cases involving accused people aged 10 to 17 in England, Wales and Northern Ireland?", "A": "The Youth Court", "B": "The Crown Court only", "C": "The County Court", "D": "The High Court", "correct": "A", "why": "Accused people aged 10 to 17 normally appear in a Youth Court, though the most serious cases go to the Crown Court.", "diff": "MEDIUM"}, {"id": "q235", "ch": "govt2", "text": "The final court of appeal for civil cases across the UK is:", "A": "The Court of Appeal", "B": "The Supreme Court", "C": "The Crown Court", "D": "The High Court", "correct": "B", "why": "The Supreme Court of the United Kingdom is the highest court of appeal for civil cases in the UK.", "diff": "MEDIUM"}, {"id": "q236", "ch": "govt2", "text": "Jury service in the UK is generally compulsory for eligible people aged:", "A": "16 to 65", "B": "18 to 75", "C": "21 to 60", "D": "25 to 70", "correct": "B", "why": "Those aged 18 to 75 who are on the electoral register and meet residency requirements may be called for jury service.", "diff": "HARD"}, {"id": "q237", "ch": "govt2", "text": "A jury in a Crown Court trial in England and Wales usually consists of:", "A": "Six people", "B": "Ten people", "C": "Twelve people", "D": "Fifteen people", "correct": "C", "why": "A Crown Court jury in England, Wales and Northern Ireland has 12 members; in Scotland a criminal jury has 15.", "diff": "MEDIUM"}, {"id": "q238", "ch": "govt2", "text": "Who is responsible for making decisions about guilt in a Crown Court trial?", "A": "The judge alone", "B": "The jury", "C": "The police", "D": "The Home Secretary", "correct": "B", "why": "The jury decides whether the defendant is guilty; the judge decides the sentence.", "diff": "MEDIUM"}, {"id": "q239", "ch": "govt2", "text": "If you are arrested and taken to a police station, you have the right to:", "A": "Refuse to give any details ever", "B": "Free legal advice", "C": "Leave immediately", "D": "Choose your own judge", "correct": "B", "why": "Anyone arrested has the right to free legal advice, and can ask to see a solicitor.", "diff": "MEDIUM"}, {"id": "q240", "ch": "govt2", "text": "Complaints about the police in the UK should first be made to:", "A": "The Prime Minister", "B": "The police force concerned or the independent complaints body", "C": "The monarch", "D": "Your local MP only", "correct": "B", "why": "Complaints can be made to the police force involved, or escalated to the independent police complaints organisation.", "diff": "MEDIUM"}, {"id": "q241", "ch": "govt2", "text": "The police in the UK are expected to be:", "A": "Above the law", "B": "Accountable and subject to the same laws as everyone else", "C": "Controlled by the governing party", "D": "Exempt from complaints", "correct": "B", "why": "Police officers must obey the law themselves and are accountable for their conduct.", "diff": "EASY"}, {"id": "q242", "ch": "govt2", "text": "Which of these must you have to drive a car legally in the UK?", "A": "A valid driving licence, insurance and a roadworthy vehicle", "B": "Only a passport", "C": "Just a provisional licence", "D": "Nothing if you drive slowly", "correct": "A", "why": "Drivers need a valid licence, motor insurance and, where applicable, a valid MOT certificate and road tax.", "diff": "EASY"}, {"id": "q243", "ch": "govt2", "text": "How often must most cars over three years old have an MOT test?", "A": "Every month", "B": "Every year", "C": "Every five years", "D": "Never", "correct": "B", "why": "Vehicles over three years old must pass an annual MOT test to confirm roadworthiness.", "diff": "MEDIUM"}, {"id": "q244", "ch": "govt2", "text": "Income tax in the UK is mainly used to:", "A": "Fund public services such as health, education and roads", "B": "Pay the monarch's private expenses", "C": "Fund private companies", "D": "Pay foreign governments", "correct": "A", "why": "Taxes fund public services including the NHS, education, transport, defence and welfare.", "diff": "EASY"}, {"id": "q245", "ch": "govt2", "text": "The system by which most employees pay income tax directly from wages is called:", "A": "PAYE", "B": "VAT", "C": "MOT", "D": "NHS", "correct": "A", "why": "Pay As You Earn (PAYE) deducts income tax and National Insurance directly from wages.", "diff": "MEDIUM"}, {"id": "q246", "ch": "govt2", "text": "National Insurance contributions help pay for:", "A": "State benefits and the state pension", "B": "Private school fees", "C": "Company profits", "D": "Foreign aid only", "correct": "A", "why": "National Insurance contributions fund state benefits, the NHS and the state pension.", "diff": "MEDIUM"}, {"id": "q247", "ch": "govt2", "text": "People who are self-employed must:", "A": "Never pay tax", "B": "Complete a Self Assessment tax return", "C": "Pay tax only if they employ others", "D": "Register with the police", "correct": "B", "why": "Self-employed people report their income and pay tax through the Self Assessment system.", "diff": "MEDIUM"}, {"id": "q248", "ch": "govt2", "text": "Which of these is a way to take part in local democracy?", "A": "Voting in local council elections", "B": "Refusing to register to vote", "C": "Ignoring planning notices", "D": "Avoiding all public meetings", "correct": "A", "why": "Voting in local elections, attending council meetings and contacting councillors are all ways of participating locally.", "diff": "EASY"}, {"id": "q249", "ch": "govt2", "text": "Local councils are responsible for services such as:", "A": "Foreign policy", "B": "Rubbish collection, local schools and social services", "C": "Defence", "D": "Issuing passports", "correct": "B", "why": "Local authorities deliver services including waste collection, education, housing, planning and social care.", "diff": "EASY"}, {"id": "q250", "ch": "govt2", "text": "Council services are funded partly by:", "A": "Council tax", "B": "Import duties only", "C": "Television licences", "D": "Church collections", "correct": "A", "why": "Council tax, paid by households, along with central government funding, pays for local services.", "diff": "EASY"}, {"id": "q251", "ch": "govt1", "text": "You can contact your MP by:", "A": "Writing to them or attending their surgery", "B": "Only by visiting Buckingham Palace", "C": "Only through a solicitor", "D": "You cannot contact MPs", "correct": "A", "why": "Constituents can write to their MP, email them, or attend an advice surgery to raise concerns.", "diff": "EASY"}, {"id": "q252", "ch": "govt1", "text": "Which of these describes the role of the Opposition in Parliament?", "A": "To support every government decision", "B": "To scrutinise and challenge the government", "C": "To appoint judges", "D": "To collect taxes", "correct": "B", "why": "The Opposition holds the government to account, challenges policy and offers an alternative programme.", "diff": "MEDIUM"}, {"id": "q253", "ch": "govt1", "text": "A by-election is held when:", "A": "A general election is delayed", "B": "An MP's seat becomes vacant between general elections", "C": "The Prime Minister resigns", "D": "A council raises council tax", "correct": "B", "why": "A by-election is held in a single constituency when the sitting MP resigns, dies or is otherwise removed.", "diff": "MEDIUM"}, {"id": "q254", "ch": "govt1", "text": "Pressure groups and charities in the UK:", "A": "Are banned from campaigning", "B": "May campaign to influence government policy", "C": "Must be approved by the monarch", "D": "Can only operate in London", "correct": "B", "why": "Pressure groups, charities and trade unions may lawfully campaign to influence public policy.", "diff": "MEDIUM"}, {"id": "q255", "ch": "govt2", "text": "Which of these is an example of a criminal offence in the UK?", "A": "Selling alcohol to someone under 18", "B": "Disagreeing with a government policy", "C": "Joining a trade union", "D": "Attending a peaceful protest", "correct": "A", "why": "Selling alcohol to a person under 18 is a criminal offence. Peaceful protest and union membership are lawful.", "diff": "EASY"}, {"id": "q256", "ch": "govt2", "text": "Carrying a weapon in public in the UK is:", "A": "Legal for anyone over 18", "B": "A criminal offence", "C": "Permitted with a receipt", "D": "Allowed at night", "correct": "B", "why": "Carrying a weapon, including a knife, in public without lawful authority is a serious criminal offence.", "diff": "EASY"}, {"id": "q257", "ch": "govt2", "text": "Discrimination at work on grounds of race, sex or disability is:", "A": "Permitted by small employers", "B": "Unlawful", "C": "Only unlawful in the public sector", "D": "A matter for the employer alone", "correct": "B", "why": "Discrimination on protected grounds is unlawful in employment across the UK.", "diff": "EASY"}, {"id": "q258", "ch": "govt2", "text": "The UK's membership of the United Nations reflects its role in:", "A": "International cooperation and peacekeeping", "B": "Setting UK income tax", "C": "Running the NHS", "D": "Electing MPs", "correct": "A", "why": "The UK is a permanent member of the UN Security Council and participates in international cooperation and peacekeeping.", "diff": "MEDIUM"}, {"id": "q259", "ch": "govt2", "text": "The Council of Europe is concerned mainly with:", "A": "Trade tariffs", "B": "Human rights and the rule of law", "C": "Military defence", "D": "Currency policy", "correct": "B", "why": "The Council of Europe promotes human rights, democracy and the rule of law across its member states.", "diff": "HARD"}, {"id": "q260", "ch": "govt2", "text": "Which of these is a way of settling a small civil dispute without a full court hearing?", "A": "The small claims procedure", "B": "A criminal trial", "C": "A general election", "D": "A public inquiry", "correct": "A", "why": "The small claims procedure offers an informal, lower-cost way to resolve minor civil disputes.", "diff": "MEDIUM"}, {"id": "q261", "ch": "govt1", "text": "Who can stand as a candidate in a UK general election?", "A": "Only people over 40", "B": "Most UK, Irish and qualifying Commonwealth citizens aged 18 or over", "C": "Only members of the House of Lords", "D": "Only civil servants", "correct": "B", "why": "Most people aged 18 or over who are British, Irish or qualifying Commonwealth citizens may stand, subject to some disqualifications.", "diff": "HARD"}];
+
+const SETS = [[180, 177, 63, 249, 14, 54, 78, 102, 130, 144, 125, 251, 98, 11, 243, 94, 212, 174, 176, 107, 147, 252, 158, 248], [242, 96, 237, 175, 127, 118, 106, 209, 119, 81, 9, 220, 134, 207, 222, 199, 215, 239, 67, 149, 31, 169, 95, 69], [60, 137, 228, 135, 117, 233, 210, 157, 34, 194, 247, 89, 42, 238, 163, 110, 155, 13, 154, 227, 97, 162, 47, 217], [115, 18, 230, 260, 172, 103, 196, 201, 121, 224, 214, 116, 79, 236, 136, 75, 122, 57, 152, 208, 5, 256, 112, 160], [213, 223, 193, 197, 139, 113, 56, 76, 128, 254, 250, 153, 259, 232, 189, 85, 148, 178, 101, 105, 86, 12, 22, 205], [170, 104, 202, 188, 48, 261, 240, 143, 24, 100, 73, 146, 132, 93, 142, 168, 16, 253, 255, 231, 216, 198, 111, 72], [133, 70, 36, 120, 225, 140, 173, 226, 87, 257, 167, 71, 109, 28, 183, 92, 108, 124, 181, 219, 246, 52, 244, 195], [88, 211, 165, 1, 58, 218, 131, 164, 114, 229, 145, 166, 99, 77, 91, 182, 241, 192, 123, 49, 4, 221, 141, 235], [98, 258, 186, 107, 252, 102, 151, 251, 171, 90, 126, 212, 161, 191, 203, 65, 245, 138, 55, 26, 61, 150, 234, 15], [222, 96, 118, 130, 80, 200, 147, 125, 33, 129, 106, 220, 184, 25, 249, 50, 215, 159, 74, 206, 185, 243, 248, 94], [64, 156, 242, 110, 228, 227, 237, 89, 144, 10, 119, 187, 149, 204, 179, 239, 127, 20, 43, 95, 190, 84, 217, 97], [40, 51, 115, 137, 174, 230, 116, 177, 27, 45, 238, 117, 103, 134, 214, 247, 154, 180, 62, 155, 176, 158, 224, 233], [44, 105, 236, 136, 254, 2, 260, 207, 101, 112, 122, 46, 213, 68, 39, 256, 169, 152, 209, 175, 135, 86, 199, 223], [210, 53, 261, 93, 113, 121, 232, 216, 139, 7, 259, 128, 153, 250, 100, 163, 157, 82, 41, 162, 6, 253, 104, 194], [109, 226, 92, 132, 225, 201, 59, 255, 172, 231, 87, 83, 8, 66, 111, 32, 219, 208, 146, 160, 148, 143, 196, 240]];
+
+
+const chTitle = s => CHAPTERS.find(c=>c.slug===s).title;
+const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- State ---------- */
+let view='home', T=null, timerId=null;
+
+/* ---------- Local progress store ----------
+   No accounts, no server: progress lives in the visitor's own browser.
+   Every access is wrapped, because localStorage throws in Safari private
+   mode and can be disabled entirely. If it's unavailable the whole app
+   still works — the user just doesn't get saved progress, and the
+   dashboard says so plainly rather than silently showing an empty state. */
+const STORE_KEY = 'yukhd.lifeuk.v1';
+let storageOK = true;
+try {
+  const probe = '__t';
+  localStorage.setItem(probe, '1');
+  localStorage.removeItem(probe);
+} catch(e) { storageOK = false; }
+
+function loadProgress(){
+  if(!storageOK) return {attempts:[], misses:{}};
+  try{
+    const raw = localStorage.getItem(STORE_KEY);
+    if(!raw) return {attempts:[], misses:{}};
+    const data = JSON.parse(raw);
+    // Defensive: corrupted or hand-edited storage shouldn't crash the app.
+    if(!data || typeof data !== 'object') return {attempts:[], misses:{}};
+    return {
+      attempts: Array.isArray(data.attempts) ? data.attempts : [],
+      misses: (data.misses && typeof data.misses === 'object') ? data.misses : {}
+    };
+  }catch(e){
+    return {attempts:[], misses:{}};
+  }
+}
+
+function saveProgress(p){
+  if(!storageOK) return false;
+  try{
+    // Cap stored attempts so the record can't grow without bound.
+    const trimmed = {attempts: p.attempts.slice(-50), misses: p.misses};
+    localStorage.setItem(STORE_KEY, JSON.stringify(trimmed));
+    return true;
+  }catch(e){ return false; }
+}
+
+function clearProgress(){
+  if(!storageOK) return;
+  try{ localStorage.removeItem(STORE_KEY); }catch(e){}
+  render();
+}
+
+/* Records one finished attempt plus per-question miss counts, which is
+   what drives the weak-areas session. */
+function recordAttempt(entry, qs, answers){
+  const p = loadProgress();
+  p.attempts.push(entry);
+  qs.forEach(q => {
+    const a = answers[q.id];
+    const rec = p.misses[q.id] || {seen:0, missed:0};
+    rec.seen += 1;
+    if(a !== q.correct) rec.missed += 1;
+    p.misses[q.id] = rec;
+  });
+  saveProgress(p);
+}
+
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+function toggleNav(){
+  const el = document.getElementById('navlinks');
+  const btn = document.getElementById('navtoggle');
+  const open = el.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  btn.textContent = open ? '\u2715' : '\u2630';
+}
+
+function closeNav(){
+  const el = document.getElementById('navlinks');
+  if(el && el.classList.contains('open')) toggleNav();
+}
+
+function go(v){ closeNav(); if(timerId){clearInterval(timerId);timerId=null;} view=v; T=null; render(); window.scrollTo(0,0); }
+
+/* ---------- Test engine ---------- */
+function startSet(i){
+  const qs = SETS[i].map(n=>Q[n]);
+  const secs = 45*60;
+  T = {title:'Life in the UK Practice Test '+(i+1), qs, answers:{}, flags:new Set(), idx:0,
+       deadline:Date.now()+secs*1000, done:false, confirm:false, result:null};
+  view='run'; render(); window.scrollTo(0,0);
+  timerId = setInterval(tick,1000);
+}
+
+function startTest(count, title, pool){
+  const qs = shuffle(pool||Q).slice(0,count);
+  const secs = Math.round(count/24*45*60);
+  T = {title, qs, answers:{}, flags:new Set(), idx:0, deadline:Date.now()+secs*1000, done:false, confirm:false, result:null};
+  view='run'; render(); window.scrollTo(0,0);
+  timerId = setInterval(tick,1000);
+}
+
+function tick(){
+  if(!T||T.done) return;
+  const left = Math.max(0, Math.floor((T.deadline-Date.now())/1000));
+  const el = document.getElementById('timer');
+  if(el){
+    el.textContent='⏱ '+String(Math.floor(left/60)).padStart(2,'0')+':'+String(left%60).padStart(2,'0');
+    el.className='timer'+(left<=60?' crit':left<=300?' warn':'');
+  }
+  if(left===0){ clearInterval(timerId); timerId=null; finish(); }
+}
+
+function pick(letter){ T.answers[T.qs[T.idx].id]=letter; render(); }
+function toggleFlag(){ const id=T.qs[T.idx].id; T.flags.has(id)?T.flags.delete(id):T.flags.add(id); render(); }
+function nav(i){ if(document.activeElement&&document.activeElement.blur) document.activeElement.blur(); T.idx=Math.max(0,Math.min(T.qs.length-1,i)); render(); window.scrollTo(0,0); }
+
+function finish(){
+  if(timerId){clearInterval(timerId);timerId=null;}
+  let correct=0, unanswered=0;
+  T.qs.forEach(q=>{ const a=T.answers[q.id]; if(!a) unanswered++; else if(a===q.correct) correct++; });
+  const total=T.qs.length;
+  const pct=Math.round(correct/total*1000)/10;
+  T.result={correct,unanswered,incorrect:total-correct-unanswered,total,pct,passed:pct>=75};
+  T.done=true; T.confirm=false;
+  recordAttempt({title:T.title,correct,total,pct,passed:T.result.passed,at:Date.now()}, T.qs, T.answers);
+  view='result'; render(); window.scrollTo(0,0);
+}
+
+/* ---------- Study mode ---------- */
+let S=null;
+function startStudy(slug){
+  S={slug, qs:shuffle(Q.filter(q=>q.ch===slug)), idx:0, sel:null, right:0, seen:0};
+  view='studyrun'; render(); window.scrollTo(0,0);
+}
+function studyPick(l){ if(S.sel) return; S.sel=l; S.seen++; if(l===S.qs[S.idx].correct) S.right++; render(); }
+function studyNext(){ S.sel=null; S.idx++; render(); window.scrollTo(0,0); }
+
+/* ---------- Views ---------- */
+function render(){
+  const app=document.getElementById('app');
+  app.innerHTML = ({home:vHome,tests:vTests,study:vStudy,studyrun:vStudyRun,run:vRun,result:vResult,dashboard:vDash,privacy:vPrivacy,terms:vTerms,cookies:vCookies,about:vAbout}[view]||vHome)();
+}
+
+function vHome(){
+  return `
+  <section class="hero"><div class="wrap">
+    <span class="eyebrow">Free practice · No official affiliation</span>
+    <h1>Pass your Life in the UK Test with confidence</h1>
+    <p class="lede">Practise with realistic multiple-choice questions, timed 45-minute mock tests and targeted revision built around your weak topics.</p>
+    <div class="hero-cta">
+      <button class="btn btn-primary btn-lg" onclick="go('tests')">Start free practice</button>
+      <button class="btn btn-outline-light btn-lg" onclick="go('study')">Browse study chapters</button>
+    </div>
+    <dl class="stats">
+      <div><dt>Practice tests</dt><dd>15</dd></div>
+      <div><dt>Format</dt><dd>24 Qs</dd></div>
+      <div><dt>Question bank</dt><dd>262</dd></div>
+    </dl>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <h2>Everything you need to pass</h2>
+    <div class="grid grid-3 mt4">
+      ${[['⏱','45-minute mock exams','24 questions, 75% pass mark — the exact mechanics of the real test.'],
+         ['◎','Weak-topic engine','Every question you miss is tracked, then fed back as targeted revision.'],
+         ['▤','Progress tracking','Accuracy by chapter, best score, and your streak over time.'],
+         ['◈','Study chapters','Untimed mode: answer, see the correct answer immediately, read why.'],
+         ['⚡','Quick practice','10, 20 or 24-question sessions when you only have a few minutes.'],
+         ['✓','Honest results','Full breakdown of correct, incorrect and unanswered — reviewed one by one.']
+        ].map(f=>`<div class="card"><div class="icon">${f[0]}</div><h3>${f[1]}</h3><p>${f[2]}</p></div>`).join('')}
+    </div>
+  </div></section>
+
+  <section class="section band"><div class="narrow center">
+    <h2>Practice → Learn → Track → Improve → Pass</h2>
+    <p class="muted mt2">Free practice works without an account. Signing in saves your scores and unlocks the weak-topic engine.</p>
+    <div class="mt3"><button class="btn btn-primary btn-lg" onclick="go('tests')">Take a practice test</button></div>
+  </div></section>`;
+}
+
+function vTests(){
+  const tests=SETS.map((s,i)=>({n:i+1,t:'Life in the UK Practice Test '+(i+1)}));
+  return `<div class="page"><div class="wrap">
+    <h1 style="font-size:1.9rem">Practice tests</h1>
+    <p class="muted mt1">Each test mirrors the real exam format: 24 multiple-choice questions, 45 minutes, 75% pass mark.</p>
+    <div class="grid grid-2 mt4">
+      ${tests.map(t=>`<div class="card">
+        <h3>${t.t}</h3><p>24-question timed mock covering all five study chapters.</p>
+        <p class="muted mt2" style="font-size:.8rem">◷ 45 min &nbsp;·&nbsp; ▤ 24 questions</p>
+        <button class="btn btn-primary mt3" style="width:100%" onclick="startSet(${t.n-1})">Take the test</button>
+      </div>`).join('')}
+    </div>
+    <div class="adslot" data-ad-slot="tests-mid" aria-hidden="true"></div>
+
+    <div class="card mt4">
+      <h3>Quick practice</h3><p>Short on time? Run a randomised session instead.</p>
+      <div class="row mt3" style="justify-content:flex-start">
+        <button class="btn btn-outline btn-sm" onclick="startTest(10,'Quick Practice (10 questions)')">10 questions</button>
+        <button class="btn btn-outline btn-sm" onclick="startTest(20,'Quick Practice (20 questions)')">20 questions</button>
+        <button class="btn btn-secondary btn-sm" onclick="startTest(24,'Quick Practice (24 questions)')">24 questions</button>
+      </div>
+    </div>
+  </div></div>`;
+}
+
+function vStudy(){
+  return `<div class="page"><div class="narrow">
+    <h1 style="font-size:1.9rem">Study chapters</h1>
+    <p class="muted mt1">Untimed revision: answer, see the correct answer straight away, and read why.</p>
+    <div class="grid mt4">
+      ${CHAPTERS.map((c,i)=>{
+        const n=Q.filter(q=>q.ch===c.slug).length;
+        return `<div class="card clickable" onclick="startStudy('${c.slug}')" role="button" tabindex="0">
+          <div class="chapter-row">
+            <div><div class="num">Chapter ${i+1}</div><h3>${c.title}</h3><p>${c.desc}</p></div>
+            <span class="count">${n} questions</span>
+          </div></div>`;
+      }).join('')}
+    </div>
+    <div class="adslot" data-ad-slot="study-index" aria-hidden="true"></div>
+  </div></div>`;
+}
+
+function vStudyRun(){
+  if(S.idx>=S.qs.length){
+    return `<div class="page"><div class="narrow center">
+      <div class="result"><div class="kicker">Chapter complete</div>
+      <div class="score">${S.right} / ${S.seen}</div>
+      <p class="muted mt2">${chTitle(S.slug)}</p></div>
+      <div class="row mt3">
+        <button class="btn btn-outline" onclick="go('study')">Back to chapters</button>
+        <button class="btn btn-primary" onclick="startStudy('${S.slug}')">Study again</button>
+      </div></div></div>`;
+  }
+  const q=S.qs[S.idx];
+  return `<div class="page"><div class="narrow">
+    <div class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-600)">Study mode · Untimed</div>
+    <h1 style="font-size:1.5rem" class="mt1">${chTitle(S.slug)}</h1>
+    <div style="display:flex;justify-content:space-between" class="muted mt3">
+      <span>Question ${S.idx+1} of ${S.qs.length}</span><span>${S.right}/${S.seen} correct so far</span>
+    </div>
+    <div class="qcard mt2">
+      <p class="qtext">${esc(q.text)}</p>
+      <div class="answers mt3">${['A','B','C','D'].map(l=>{
+        let cls='ans';
+        if(S.sel){ cls += l===q.correct?' correct':(l===S.sel?' wrong':' dim'); }
+        return `<button class="${cls}" ${S.sel?'disabled':''} onclick="studyPick('${l}')">
+          <span class="letter">${l}</span><span class="txt">${esc(q[l])}</span>
+          ${S.sel&&l===q.correct?'<span class="badge-ico ok">✓</span>':''}
+          ${S.sel&&l===S.sel&&l!==q.correct?'<span class="badge-ico no">✕</span>':''}
+        </button>`}).join('')}</div>
+      ${S.sel?`<div class="explain"><p style="font-weight:600">${S.sel===q.correct?'<span style="color:var(--success)">✓ Correct</span>':'<span style="color:var(--error)">✕ Not quite</span>'}</p><p class="why">${esc(q.why)}</p></div>`:''}
+    </div>
+    <div style="display:flex;justify-content:flex-end" class="mt3">
+      <button class="btn btn-primary" ${S.sel?'':'disabled'} onclick="studyNext()">${S.idx===S.qs.length-1?'Finish chapter':'Next question'}</button>
+    </div>
+  </div></div>`;
+}
+
+function vRun(){
+  const q=T.qs[T.idx], sel=T.answers[q.id], flagged=T.flags.has(q.id);
+  const answered=Object.keys(T.answers).length;
+  return `<div class="page"><div class="wrap">
+    <div class="runner-head">
+      <div><h2>${T.title}</h2><div class="sub">Question ${T.idx+1} of ${T.qs.length}</div></div>
+      <div id="timer" class="timer">⏱ --:--</div>
+    </div>
+    <div class="runner-body">
+      <div>
+        <div class="qcard">
+          <div class="qtop">
+            <p class="qtext">${esc(q.text)}</p>
+            <button class="flagbtn ${flagged?'on':''}" onclick="toggleFlag()" aria-pressed="${flagged}">⚑ ${flagged?'Flagged':'Flag for review'}</button>
+          </div>
+          <div class="answers">${['A','B','C','D'].map(l=>`
+            <button class="ans ${sel===l?'sel':''}" onclick="pick('${l}')" aria-pressed="${sel===l}">
+              <span class="letter">${l}</span><span class="txt">${esc(q[l])}</span>
+            </button>`).join('')}</div>
+        </div>
+        <div class="runner-foot">
+          <button class="btn btn-outline" ${T.idx===0?'disabled':''} onclick="nav(${T.idx-1})">‹ Previous</button>
+          ${T.idx===T.qs.length-1
+            ? `<button class="btn btn-primary" onclick="T.confirm=true;render()">Finish test</button>`
+            : `<button class="btn btn-secondary" onclick="nav(${T.idx+1})">Next ›</button>`}
+        </div>
+      </div>
+      <aside class="navi">
+        <h3>Question navigator</h3>
+        <div class="qgrid">${T.qs.map((qq,i)=>{
+          const c = i===T.idx?'current':T.flags.has(qq.id)?'flagged':T.answers[qq.id]?'answered':'';
+          return `<button class="${c}" onclick="nav(${i})" aria-label="Question ${i+1}">${i+1}</button>`;
+        }).join('')}</div>
+        <div class="legend">
+          <span><i class="swatch" style="background:var(--navy-100)"></i>Answered</span>
+          <span><i class="swatch" style="background:var(--gold-100);border:1px solid var(--gold)"></i>Flagged</span>
+          <span><i class="swatch" style="background:#fff;border:1px solid var(--navy-100)"></i>Unanswered</span>
+          <span><i class="swatch" style="background:var(--navy)"></i>Current</span>
+        </div>
+        <button class="btn btn-outline btn-sm mt3" style="width:100%" onclick="T.confirm=true;render()">Review &amp; submit</button>
+      </aside>
+    </div>
+    ${T.confirm?`<div class="overlay"><div class="modal">
+      <h3>Submit this test?</h3>
+      <dl>
+        <div><dt>Questions answered</dt><dd>${answered}/${T.qs.length}</dd></div>
+        <div><dt>Flagged for review</dt><dd style="color:var(--gold-600)">${T.flags.size}</dd></div>
+        <div><dt>Unanswered</dt><dd style="color:var(--error)">${T.qs.length-answered}</dd></div>
+      </dl>
+      <div class="row mt3">
+        <button class="btn btn-outline" onclick="T.confirm=false;render()">Keep reviewing</button>
+        <button class="btn btn-primary" onclick="finish()">Submit now</button>
+      </div>
+    </div></div>`:''}
+  </div></div>`;
+}
+
+function vResult(){
+  const r=T.result;
+  return `<div class="page"><div class="narrow">
+    <div class="result">
+      <div class="kicker">Test complete</div>
+      <div class="score">${r.correct} / ${r.total}</div>
+      <div class="pct">${r.pct}%</div>
+      <div class="verdict ${r.passed?'pass':'fail'}">${r.passed?'✓ PASS':'KEEP GOING'}</div>
+      ${!r.passed?`<p class="muted mt2">You need ${Math.ceil(r.total*0.75)} correct answers to reach the practice pass mark.</p>`:''}
+      <dl class="breakdown">
+        <div><dt>Correct</dt><dd style="color:var(--success)">${r.correct}</dd></div>
+        <div><dt>Incorrect</dt><dd style="color:var(--error)">${r.incorrect}</dd></div>
+        <div><dt>Unanswered</dt><dd style="color:var(--navy-400)">${r.unanswered}</dd></div>
+      </dl>
+    </div>
+    <div class="note">Saved to this browser \u2014 no account needed. Your score and the questions you missed
+      now feed into <button class="btn btn-sm btn-outline" style="margin-left:.35rem" onclick="go('dashboard')">My Progress</button></div>
+    <!-- AD SLOT: results-page. Safe placement: below the score summary and
+         above answer review, never adjacent to answer options. -->
+    <div class="adslot" data-ad-slot="results-top" aria-hidden="true"></div>
+    <div class="row mt3">
+      <button class="btn btn-outline" onclick="go('tests')">Take another test</button>
+      <button class="btn btn-secondary" onclick="go('dashboard')">View progress</button>
+    </div>
+    <h2 style="font-size:1.35rem" class="mt6">Review your answers</h2>
+    <div class="grid mt3">
+      ${T.qs.map((q,i)=>{ const sel=T.answers[q.id];
+        return `<div class="qcard">
+          <div class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-400)">Question ${i+1}</div>
+          <p class="qtext mt1">${esc(q.text)}</p>
+          <div class="answers mt2">${['A','B','C','D'].map(l=>{
+            let cls='ans '+(l===q.correct?'correct':(sel===l?'wrong':'dim'));
+            return `<button class="${cls}" disabled><span class="letter">${l}</span><span class="txt">${esc(q[l])}</span>
+              ${l===q.correct?'<span class="badge-ico ok">✓</span>':''}
+              ${sel===l&&l!==q.correct?'<span class="badge-ico no">✕</span>':''}</button>`}).join('')}</div>
+          <div class="explain"><p class="meta">Your answer: <strong style="color:var(--navy)">${sel||'Not answered'}</strong> · Correct answer: <strong style="color:var(--success)">${q.correct}</strong></p>
+          <p class="why">${esc(q.why)}</p></div>
+        </div>`}).join('')}
+    </div>
+  </div></div>`;
+}
+
+
+function legalPage(title, body){
+  return `<div class="page"><div class="narrow">
+    <h1 style="font-size:1.8rem">${title}</h1>
+    <div class="mt3" style="font-size:.95rem;color:var(--navy-600)">${body}</div>
+  </div></div>`;
+}
+
+function vPrivacy(){
+  return legalPage('Privacy notice', `
+    <p>This site is operated by Risten Global Ltd as a free revision resource. It has no
+    accounts, no sign-up and no login, and we do not ask you for your name, email address,
+    phone number or any other personal detail.</p>
+    <h2 class="mt3" style="font-size:1.1rem">Your practice progress</h2>
+    <p class="mt1">Your scores, attempts and the questions you got wrong are stored in your own
+    browser using local storage. That data stays on your device, is never transmitted to us, and
+    you can erase it at any time from the My Progress page or by clearing your browser data.</p>
+    <h2 class="mt3" style="font-size:1.1rem">Advertising and analytics</h2>
+    <p class="mt1">To keep the site free we intend to show advertising and to measure traffic.
+    These are third-party services which may set their own cookies and process data such as your
+    IP address and device information under their own privacy policies. They are only loaded if
+    you accept non-essential cookies. If you reject them, the site works exactly the same.</p>
+    <p class="mt1">We will not claim this site collects no data once third-party advertising is
+    active \u2014 it does, through those providers.</p>
+    <h2 class="mt3" style="font-size:1.1rem">Your rights</h2>
+    <p class="mt1">Because we hold no personal data about you on our own systems, there is no
+    account to access, correct or delete. For questions about this notice, contact Risten Global Ltd
+    through the main YourUKHelpDesk site.</p>`);
+}
+
+function vCookies(){
+  return legalPage('Cookie notice', `
+    <p><strong>Strictly necessary / functional.</strong> This site uses your browser\u2019s local
+    storage to remember your practice progress and your cookie choice. This is first-party, stays
+    on your device, and is required for the progress feature to work.</p>
+    <p class="mt2"><strong>Advertising and analytics.</strong> Only set if you press
+    \u201cAccept all\u201d. These are third-party cookies used to serve and measure adverts and to
+    understand how the site is used.</p>
+    <p class="mt2">You can change your mind at any time by clearing this site\u2019s data in your
+    browser, which resets your choice and removes stored progress.</p>`);
+}
+
+function vTerms(){
+  return legalPage('Terms and conditions', `
+    <p><strong>1. Independent resource.</strong> This is an independent revision tool produced by
+    Risten Global Ltd. It is not affiliated with, endorsed by or connected to the UK Home Office or
+    any government body, and it is not the official Life in the UK Test.</p>
+    <p class="mt2"><strong>2. No guarantee.</strong> Questions and explanations are original
+    educational content written for revision. They are not official government wording and may not
+    match the content or difficulty of the real examination. We cannot guarantee that using this
+    site will result in passing the official test.</p>
+    <p class="mt2"><strong>3. Accuracy.</strong> We aim for accuracy but you should always check
+    current official guidance for anything that affects a real application.</p>
+    <p class="mt2"><strong>4. Acceptable use.</strong> Please don\u2019t scrape, republish or resell
+    the question content.</p>
+    <p class="mt2"><strong>5. Changes.</strong> These terms may be updated from time to time.</p>`);
+}
+
+function vAbout(){
+  return legalPage('About', `
+    <p>YourUKHelpDesk is produced by Risten Global Ltd to give people practical help navigating UK
+    systems \u2014 from citizenship preparation to benefits and public services.</p>
+    <p class="mt2">This Life in the UK practice site is free to use, needs no account, and is funded
+    by advertising so it can stay that way.</p>`);
+}
+
+function vDash(){
+  const p = loadProgress();
+  const attempts = p.attempts;
+
+  const storageWarning = storageOK ? '' : `<div class="note mt3" style="text-align:left">
+    Your browser has storage disabled (or you're in private browsing), so progress
+    can't be saved between visits. Everything else on the site works normally.</div>`;
+
+  if(!attempts.length){
+    return `<div class="page"><div class="narrow center">
+      <h1 style="font-size:1.9rem">My progress</h1>
+      <div class="card mt4"><p class="muted">You haven\u2019t completed a practice test yet.</p>
+      <button class="btn btn-primary mt3" onclick="go('tests')">Start your first test</button></div>
+      ${storageWarning}
+    </div></div>`;
+  }
+
+  const passed = attempts.filter(h=>h.passed).length;
+  const avg = Math.round(attempts.reduce((s,h)=>s+h.pct,0)/attempts.length*10)/10;
+  const best = Math.max(...attempts.map(h=>h.pct));
+  const totalQs = attempts.reduce((s,h)=>s+h.total,0);
+  const totalRight = attempts.reduce((s,h)=>s+h.correct,0);
+  const accuracy = totalQs ? Math.round(totalRight/totalQs*1000)/10 : 0;
+
+  // Chapter accuracy across ALL recorded attempts, derived from per-question
+  // miss counts rather than only the most recent test.
+  const perCh = CHAPTERS.map(c=>{
+    const ids = Q.filter(q=>q.ch===c.slug).map(q=>q.id);
+    let seen=0, missed=0;
+    ids.forEach(id=>{ const r=p.misses[id]; if(r){ seen+=r.seen; missed+=r.missed; } });
+    return {t:c.title, acc: seen ? Math.round((seen-missed)/seen*100) : null, seen};
+  });
+
+  const weakCount = Object.values(p.misses).filter(r=>r.missed>0).length;
+
+  return `<div class="page"><div class="wrap">
+    <h1 style="font-size:1.9rem">My progress</h1>
+    <p class="muted mt1">Saved in this browser only \u2014 no account, nothing sent to a server.</p>
+    <div class="grid grid-3 mt4">
+      ${[['Tests completed',attempts.length,''],['Tests passed',passed,'color:var(--success)'],
+         ['Average score',avg+'%',''],['Best score',best+'%','color:var(--gold-600)'],
+         ['Questions answered',totalQs,''],['Overall accuracy',accuracy+'%','']]
+        .map(x=>`<div class="card"><p style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--navy-400)">${x[0]}</p>
+        <p style="font-family:Fraunces,serif;font-size:1.6rem;font-weight:700;margin-top:.2rem;${x[2]}">${x[1]}</p></div>`).join('')}
+    </div>
+    <div class="grid grid-2 mt6" style="align-items:start">
+      <div><h2 style="font-size:1.2rem">Accuracy by chapter</h2>
+        <div class="mt3">${perCh.map(c=>`<div style="margin-bottom:1rem">
+          <div style="display:flex;justify-content:space-between;font-size:.85rem"><span style="font-weight:500">${c.t}</span>
+          <span class="muted">${c.acc===null?'Not attempted':c.acc+'%'}</span></div>
+          <div class="bar"><i style="width:${c.acc||0}%;background:${c.acc>=75?'var(--success)':c.acc>=50?'var(--gold)':'var(--error)'}"></i></div>
+        </div>`).join('')}</div>
+        <button class="btn btn-secondary mt2" ${weakCount?'':'disabled'} onclick="startWeak()">
+          Practise my weak areas${weakCount?' ('+weakCount+')':''}</button>
+        ${weakCount?'':'<p class="muted mt2" style="font-size:.8rem">Once you get some questions wrong, they\u2019ll be collected here for targeted revision.</p>'}
+      </div>
+      <div><h2 style="font-size:1.2rem">Recent attempts</h2>
+        <div class="mt3">${attempts.slice().reverse().slice(0,10).map(h=>`<div class="card" style="padding:1rem;margin-bottom:.6rem">
+          <div class="chapter-row"><div><p style="font-weight:600;font-size:.92rem">${esc(h.title)}</p>
+          <p class="muted" style="font-size:.75rem">${new Date(h.at).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</p></div>
+          <span class="pill" style="${h.passed?'background:#DFF1E5;color:var(--success)':''}">${h.correct}/${h.total} \u00b7 ${h.passed?'Pass':'Fail'}</span></div>
+        </div>`).join('')}</div>
+        <button class="btn btn-outline btn-sm mt2" onclick="if(confirm('Clear all saved progress on this device? This cannot be undone.'))clearProgress()">Clear saved progress</button>
+      </div>
+    </div>
+    ${storageWarning}
+  </div></div>`;
+}
+
+/* Weak-areas session: questions this browser has actually got wrong,
+   most-missed first, topped up with fresh ones if there aren't enough. */
+function startWeak(){
+  const p = loadProgress();
+  const missed = Object.entries(p.misses)
+    .filter(([id,r]) => r.missed > 0)
+    .sort((a,b) => b[1].missed - a[1].missed)
+    .map(([id]) => Q.find(q => q.id === id))
+    .filter(Boolean);
+
+  if(!missed.length){ go('tests'); return; }
+
+  let pool = missed.slice(0, 24);
+  if(pool.length < 10){
+    const have = new Set(pool.map(q=>q.id));
+    pool = pool.concat(shuffle(Q.filter(q=>!have.has(q.id))).slice(0, 10 - pool.length));
+  }
+  startTest(pool.length, 'My Weak Areas', pool);
+}
+
+
+/* ---------- Cookie / consent ----------
+   Non-essential (advertising, analytics) scripts must not run before the
+   visitor opts in, per UK PECR/GDPR. This gate is real: loadAds() is the
+   only place ad or analytics scripts should ever be attached, and it is
+   never called without a stored "granted" choice. The site's own progress
+   storage is first-party and strictly functional, so it isn't gated here. */
+const CONSENT_KEY = 'yukhd.consent.v1';
+
+function getConsent(){
+  if(!storageOK) return null;
+  try{ return localStorage.getItem(CONSENT_KEY); }catch(e){ return null; }
+}
+
+function setConsent(value){
+  if(storageOK){ try{ localStorage.setItem(CONSENT_KEY, value); }catch(e){} }
+  const el = document.getElementById('consent');
+  if(el) el.remove();
+  if(value === 'granted') loadAds();
+}
+
+function loadAds(){
+  /* No ad network is configured yet. When AdSense (or another network) is
+     added, insert its script tag here — and only here — so it can never
+     load without consent. The .adslot containers are already reserved in
+     the layout, so adding them won't shift the page. */
+  document.querySelectorAll('.adslot').forEach(el => el.setAttribute('data-consented','true'));
+}
+
+function renderConsent(){
+  if(getConsent() === 'granted'){ loadAds(); return; }
+  if(getConsent() === 'denied') return;
+  const div = document.createElement('div');
+  div.className = 'consent';
+  div.id = 'consent';
+  div.setAttribute('role','dialog');
+  div.setAttribute('aria-label','Cookie choices');
+  div.innerHTML = `<div class="consent-inner">
+    <p>We\u2019d like to use cookies for advertising and analytics to keep this site free.
+       Your practice progress is stored on your own device either way and is never sent to us.
+       See our <a href="#" onclick="go('privacy');return false">privacy notice</a>.</p>
+    <div class="btns">
+      <button class="btn btn-outline-light btn-sm" onclick="setConsent('denied')">Reject non-essential</button>
+      <button class="btn btn-primary btn-sm" onclick="setConsent('granted')">Accept all</button>
+    </div>
+  </div>`;
+  document.body.appendChild(div);
+}
+
+render();
+renderConsent();
+</script>
+</body>
+</html>
