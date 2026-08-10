@@ -224,10 +224,18 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
     <div class="brand" style="color:#fff">YourUK<span style="color:var(--gold)">HelpDesk</span></div>
     <p class="mt1" style="font-size:.85rem;color:var(--navy-300)">Everything they forgot to tell you about UK life.</p>
     <p class="mt3" style="font-size:.82rem">
-      <button onclick="go('about')" style="color:var(--gold);text-decoration:underline">About</button> &nbsp;·&nbsp;
-      <button onclick="go('privacy')" style="color:var(--gold);text-decoration:underline">Privacy</button> &nbsp;·&nbsp;
-      <button onclick="go('cookies')" style="color:var(--gold);text-decoration:underline">Cookies</button> &nbsp;·&nbsp;
-      <button onclick="go('terms')" style="color:var(--gold);text-decoration:underline">Terms</button>
+      <a href="/mock-test.html" style="color:var(--gold)">Mock Test</a> &nbsp;·&nbsp;
+      <a href="/study-guide.html" style="color:var(--gold)">Study Guide</a> &nbsp;·&nbsp;
+      <a href="/history-questions.html" style="color:var(--gold)">History Questions</a> &nbsp;·&nbsp;
+      <a href="/government-questions.html" style="color:var(--gold)">Government Questions</a> &nbsp;·&nbsp;
+      <a href="/questions-and-answers.html" style="color:var(--gold)">Questions &amp; Answers</a> &nbsp;·&nbsp;
+      <a href="/test-revision.html" style="color:var(--gold)">Test Revision</a>
+    </p>
+    <p class="mt2" style="font-size:.82rem">
+      <button onclick="go('about')" style="color:var(--navy-300);text-decoration:underline">About</button> &nbsp;·&nbsp;
+      <button onclick="go('privacy')" style="color:var(--navy-300);text-decoration:underline">Privacy</button> &nbsp;·&nbsp;
+      <button onclick="go('cookies')" style="color:var(--navy-300);text-decoration:underline">Cookies</button> &nbsp;·&nbsp;
+      <button onclick="go('terms')" style="color:var(--navy-300);text-decoration:underline">Terms</button>
     </p>
     <p class="disclaim">YourUKHelpDesk is an independent revision resource produced by Risten Global Ltd. It is not affiliated with, endorsed by, or connected to the UK Home Office or any government body, and these practice questions are not the official Life in the UK Test.</p>
   </div>
@@ -334,7 +342,9 @@ function closeNav(){
   if(el && el.classList.contains('open')) toggleNav();
 }
 
-function go(v){ closeNav(); if(timerId){clearInterval(timerId);timerId=null;} view=v; T=null; render(); window.scrollTo(0,0); }
+function go(v){ closeNav(); if(timerId){clearInterval(timerId);timerId=null;} view=v; T=null;
+  if(history.replaceState) history.replaceState(null, '', v==='home' ? location.pathname : '#'+v);
+  render(); window.scrollTo(0,0); }
 
 /* ---------- Test engine ---------- */
 function startSet(i){
@@ -814,6 +824,13 @@ function renderConsent(){
   </div>`;
   document.body.appendChild(div);
 }
+
+/* Deep-link support: SEO landing pages link here as index.html#tests,
+   #study, #dashboard etc. so external/search traffic lands directly on the
+   right screen instead of always the homepage. */
+const validViews = ['home','tests','study','dashboard','privacy','terms','cookies','about'];
+const initialHash = (location.hash || '').replace('#','');
+if (validViews.includes(initialHash)) view = initialHash;
 
 render();
 renderConsent();
