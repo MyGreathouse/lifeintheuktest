@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1015982583882591" crossorigin="anonymous"></script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Life in the UK Practice Test 2026 — Free Mock Tests | YourUKHelpDesk</title>
@@ -55,17 +54,17 @@ header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);bac
 .brand{font-family:Fraunces,serif;font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
 .brand span{color:var(--gold-600)}
 .brand .mark{width:26px;height:26px;border-radius:6px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-size:.75rem;font-weight:700}
-.nav-links{display:flex;gap:1.4rem;align-items:center}
-.nav-links button{font-size:.875rem;font-weight:500;color:var(--navy-600)}
-.nav-links button:hover{color:var(--gold-600)}
+.nav-links{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
+.nav-links button,.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy-600);text-decoration:none}
+.nav-links button:hover,.nav-links a:hover{color:var(--gold-600)}
 .navtoggle{display:none;padding:.5rem;border-radius:8px;color:var(--navy);font-size:1.35rem;line-height:1}
 @media(max-width:860px){
   .navtoggle{display:block}
   .nav-links{position:absolute;top:64px;left:0;right:0;background:#fff;border-bottom:1px solid var(--navy-100);
     flex-direction:column;align-items:stretch;gap:0;padding:.35rem 1rem .75rem;display:none;box-shadow:0 8px 20px rgba(20,31,56,.08)}
   .nav-links.open{display:flex}
-  .nav-links button{text-align:left;padding:.85rem .25rem;font-size:1rem;border-bottom:1px solid var(--navy-50)}
-  .nav-links button:last-child{border-bottom:none}
+  .nav-links button,.nav-links a{text-align:left;padding:.85rem .25rem;font-size:1rem;border-bottom:1px solid var(--navy-50)}
+  .nav-links button:last-child,.nav-links a:last-child{border-bottom:none}
 }
 
 /* buttons */
@@ -215,8 +214,11 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
     <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks" onclick="toggleNav()">☰</button>
     <nav class="nav-links" id="navlinks">
       <button onclick="go('home')">Home</button>
+      <button onclick="go('study')">Study Centre</button>
       <button onclick="go('tests')">Practice Tests</button>
-      <button onclick="go('study')">Study</button>
+      <button onclick="go('people')">Knowledge Bank</button>
+      <a href="/test-guide.html">Test Guide</a>
+      <a href="/faq.html">FAQ</a>
       <button onclick="go('dashboard')">My Progress</button>
     </nav>
   </div>
@@ -229,6 +231,8 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
     <div class="brand" style="color:#fff">YourUK<span style="color:var(--gold)">HelpDesk</span></div>
     <p class="mt1" style="font-size:.85rem;color:var(--navy-300)">Everything they forgot to tell you about UK life.</p>
     <p class="mt3" style="font-size:.82rem">
+      <a href="/test-guide.html" style="color:var(--gold)">Test Guide</a> &nbsp;·&nbsp;
+      <a href="/faq.html" style="color:var(--gold)">FAQ</a> &nbsp;·&nbsp;
       <a href="/mock-test.html" style="color:var(--gold)">Mock Test</a> &nbsp;·&nbsp;
       <a href="/study-guide.html" style="color:var(--gold)">Study Guide</a> &nbsp;·&nbsp;
       <a href="/history-questions.html" style="color:var(--gold)">History Questions</a> &nbsp;·&nbsp;
@@ -238,6 +242,7 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
     </p>
     <p class="mt2" style="font-size:.82rem">
       <button onclick="go('about')" style="color:var(--navy-300);text-decoration:underline">About</button> &nbsp;·&nbsp;
+      <a href="/editorial-policy.html" style="color:var(--navy-300);text-decoration:underline">Editorial Policy</a> &nbsp;·&nbsp;
       <button onclick="go('privacy')" style="color:var(--navy-300);text-decoration:underline">Privacy</button> &nbsp;·&nbsp;
       <button onclick="go('cookies')" style="color:var(--navy-300);text-decoration:underline">Cookies</button> &nbsp;·&nbsp;
       <button onclick="go('terms')" style="color:var(--navy-300);text-decoration:underline">Terms</button>
@@ -264,6 +269,121 @@ const SETS = [[180, 177, 63, 249, 14, 54, 78, 102, 130, 144, 125, 251, 98, 11, 2
 
 
 const chTitle = s => CHAPTERS.find(c=>c.slug===s).title;
+
+/* ---------- Study Centre lessons ----------
+   Real explanatory teaching content, distinct from the question bank.
+   Phase 1 covers two chapters; the rest still have practice questions
+   via Study mode, just not a full written lesson yet. */
+const LESSONS = {"values": {"title": "The Values and Principles of the UK", "intro": "Before you learn any dates or names, it helps to understand the ideas that the rest of the test sits on top of. The Life in the UK Test isn't really testing whether you've memorised a list — it's testing whether you understand the values that shape how the UK expects people to live together. Four ideas come up again and again: democracy, the rule of law, individual liberty, and tolerance of different faiths and beliefs.", "sections": [{"h": "Democracy — decisions made by the people, for the people", "p": ["Democracy means the people who are governed get a say in who governs them. In the UK this happens through regular elections: everyone eligible can vote for the Member of Parliament (MP) who represents their area, and those MPs form the government.", "It's easy to think of democracy as just \"voting happens here,\" but the deeper idea is accountability — if a government makes decisions people don't like, they can vote for someone else next time. That accountability is the actual point, not the ballot box itself."]}, {"h": "The rule of law — nobody is above it", "p": ["The rule of law means that laws apply to everyone equally, including the people in charge. A government minister, a police officer, and an ordinary resident are all subject to exactly the same laws, and all can be held to account by independent courts.", "This is why UK courts are deliberately kept independent of the government — a judge's decision shouldn't be influenced by what a politician wants. If courts could be overruled by whoever is in power, the rule of law wouldn't mean anything."]}, {"h": "Individual liberty — freedom within the law", "p": ["Individual liberty means people are free to make their own choices about how they live — what they believe, who they associate with, what they say — as long as they stay within the law and don't harm others.", "This is a genuinely British balancing act: freedom is real and protected, but it's not unlimited. Free speech, for example, doesn't extend to inciting violence. The test sometimes checks whether you understand that liberty and lawlessness aren't the same thing."]}, {"h": "Tolerance of those with different faiths and beliefs", "p": ["The UK is religiously and culturally diverse, and tolerance means accepting other people's right to their own beliefs and way of life, even when it differs from yours — not requiring everyone to agree, just requiring everyone to coexist respectfully and lawfully.", "This value shows up in practice through UK equality law, which makes it illegal to discriminate against someone because of their religion, race, sex, age, disability or sexual orientation."]}], "keyTerms": [["Rule of law", "The principle that everyone, including the government, must obey the law and can be held accountable by independent courts."], ["Individual liberty", "The freedom to make your own choices about belief, speech and lifestyle, within the boundaries of the law."], ["Tolerance", "Accepting other people's right to their own beliefs and lifestyle, even where you disagree, as long as they act lawfully."], ["Discrimination", "Treating someone unfairly because of a protected characteristic such as race, religion, sex, age or disability — illegal in the UK."]], "confusions": [["Individual liberty vs. lawlessness", "Liberty means freedom within the law, not freedom from the law. Doing whatever you want regardless of consequences isn't liberty — it's what the rule of law exists to prevent."], ["Tolerance vs. agreement", "Tolerance doesn't mean you have to agree with someone's beliefs. It means respecting their right to hold them, as long as they act lawfully."]], "memoryTip": "Remember the four values as a short chain: Democracy decides who governs → the Rule of law makes sure even they obey the rules → Individual liberty is what that law protects → Tolerance is what makes it possible for everyone to use that liberty side by side."}, "whatis": {"title": "What is the UK?", "intro": "This sounds like the simplest topic on the test, but it's also where candidates lose easy marks — mixing up \"UK,\" \"Great Britain,\" and \"British Isles,\" or forgetting which nation has which capital and symbol. Getting the basic geography and structure solid here makes several other topics easier later.", "sections": [{"h": "The United Kingdom, Great Britain, and the British Isles — three different things", "p": ["The United Kingdom (UK) is the political union of four nations: England, Scotland, Wales, and Northern Ireland. Great Britain is a smaller term — it refers only to the island containing England, Scotland and Wales, and does NOT include Northern Ireland.", "The British Isles is bigger still — a purely geographical term covering the UK and the Republic of Ireland (an entirely separate, independent country) together. Mixing these three up is one of the most common test mistakes, so it's worth re-reading this paragraph twice."]}, {"h": "The four nations, their capitals, and their symbols", "p": ["Each of the four nations has its own capital city and its own national symbol. England's capital is London; its symbol is the rose, and its patron saint is St George (23 April). Scotland's capital is Edinburgh; its symbol is the thistle, and its patron saint is St Andrew (30 November). Wales's capital is Cardiff; its symbols are the daffodil and the leek, and its patron saint is St David (1 March). Northern Ireland's capital is Belfast; its symbol is the shamrock, and its patron saint is St Patrick (17 March).", "The Union Flag combines the crosses of St George, St Andrew and St Patrick — Wales isn't separately represented on it, because Wales was already united with England when the flag's design was fixed."]}, {"h": "Devolution — who governs what", "p": ["Scotland, Wales and Northern Ireland each have their own devolved government with some decision-making power over matters like education and health, while defence, foreign policy and immigration remain controlled by the UK Parliament in Westminster for the whole country.", "This is why you'll sometimes see slightly different rules in different parts of the UK — school systems, for example, aren't identical in England and Scotland, because education is a devolved matter."]}, {"h": "Crown Dependencies and Overseas Territories aren't part of the UK", "p": ["The Isle of Man and the Channel Islands (Jersey and Guernsey) are Crown Dependencies — closely tied to the UK, with the UK responsible for their defence, but not actually part of the UK. Gibraltar is a British Overseas Territory, similarly connected but constitutionally separate.", "You won't need deep detail on these for most questions, but recognising that they aren't simply \"part of the UK\" is a common trap answer."]}], "keyTerms": [["United Kingdom (UK)", "The political union of England, Scotland, Wales and Northern Ireland."], ["Great Britain", "The island containing England, Scotland and Wales only — excludes Northern Ireland."], ["Devolution", "The transfer of certain decision-making powers from the UK Parliament to Scotland, Wales and Northern Ireland."], ["Crown Dependency", "A territory (e.g. the Isle of Man, Jersey, Guernsey) closely tied to the UK but not part of it."]], "confusions": [["UK vs. Great Britain", "The UK includes Northern Ireland. Great Britain does not. This single distinction accounts for a large share of missed marks on this topic."], ["British Isles vs. UK", "The British Isles includes the Republic of Ireland, a fully independent country — not part of the UK at all."]], "memoryTip": "Picture three circles, each one bigger than the last: UK (4 nations) sits inside Great Britain's bigger geographic cousin only in name — actually GB is SMALLER (3 nations, no NI) — and the British Isles is the biggest circle of all, wrapping in the Republic of Ireland too. Size order, smallest to largest: Great Britain < UK < British Isles."}};
+
+/* ---------- Knowledge Bank: People You Should Know ---------- */
+const PEOPLE = [{"name": "Alfred the Great", "who": "King of Wessex (r. 871-899), the only English monarch known as \"the Great.\"", "why": "He successfully resisted Viking invasions and is credited with laying groundwork for a unified England.", "fact": "He's associated with a legendary (possibly exaggerated) story of accidentally burning some cakes while in hiding from the Vikings.", "memory": "Alfred = defended against invaders = \"the Great\" defender.", "period": "9th century"}, {"name": "William the Conqueror", "who": "Duke of Normandy who invaded and became King of England in 1066.", "why": "His victory at the Battle of Hastings ended Anglo-Saxon rule and began Norman rule, reshaping English law, land ownership and language.", "fact": "He commissioned the Domesday Book, a survey of land and people across England, in 1086.", "memory": "1066 = Hastings = William wins = Normans in.", "period": "11th century"}, {"name": "King John", "who": "King of England who reigned 1199-1216, widely seen as one of England's less successful monarchs.", "why": "Forced by rebellious barons to agree to Magna Carta in 1215, the document that first established the monarch was subject to the law.", "fact": "His reign also saw the loss of most English territory in France.", "memory": "John signed away some of his power — literally, on Magna Carta.", "period": "13th century"}, {"name": "Henry VIII", "who": "King of England 1509-1547, famous for having six wives.", "why": "Broke England away from the Roman Catholic Church after the Pope refused to annul his first marriage, founding the Church of England with himself as its head.", "fact": "His six wives, in order: Catherine of Aragon, Anne Boleyn, Jane Seymour, Anne of Cleves, Catherine Howard, Catherine Parr.", "memory": "\"Divorced, beheaded, died, divorced, beheaded, survived\" is the traditional rhyme for what happened to each wife.", "period": "16th century"}, {"name": "Elizabeth I", "who": "Queen of England 1558-1603, daughter of Henry VIII and Anne Boleyn.", "why": "Her reign saw the defeat of the Spanish Armada (1588) and a flourishing of English drama, including Shakespeare.", "fact": "She never married, sometimes called \"the Virgin Queen.\"", "memory": "Elizabeth I = Armada defeated = Shakespeare's era.", "period": "16th century"}, {"name": "Oliver Cromwell", "who": "Political and military leader who governed as Lord Protector after the English Civil War.", "why": "Led Parliamentary forces against King Charles I; after the King's execution in 1649, England briefly became a republic under his rule.", "fact": "The monarchy was restored in 1660, after his death, when Charles II returned from exile.", "memory": "Cromwell = king executed = no king for a while.", "period": "17th century"}, {"name": "William Wilberforce", "who": "Member of Parliament and campaigner.", "why": "Led the parliamentary campaign against the transatlantic slave trade, which was abolished in Britain in 1807.", "fact": "Slavery itself (not just the trade) was abolished throughout the British Empire in 1833, shortly before his death.", "memory": "Wilberforce = the slave trade's parliamentary opponent.", "period": "18th-19th century"}, {"name": "Queen Victoria", "who": "Queen from 1837 to 1901, the second-longest reigning British monarch.", "why": "Her reign — the Victorian era — saw the British Empire expand to its largest extent and rapid industrial and social change.", "fact": "She married her cousin, Prince Albert, and their descendants ended up related to many of Europe's royal families.", "memory": "Victoria = the era name itself; if a question mentions \"Victorian,\" it's her reign.", "period": "19th century"}, {"name": "Florence Nightingale", "who": "Nurse and social reformer.", "why": "Improved care for wounded soldiers during the Crimean War and is regarded as the founder of modern nursing practice.", "fact": "Known as \"The Lady with the Lamp\" for her night rounds checking on patients.", "memory": "Nightingale = nursing = Crimean War.", "period": "19th century"}, {"name": "Emmeline Pankhurst", "who": "Political activist and leader of the suffragette movement.", "why": "Founded the Women's Social and Political Union, campaigning — sometimes through militant action — for women's right to vote.", "fact": "Some women over 30 gained the vote in 1918; equal voting rights with men (at 21) followed in 1928.", "memory": "Pankhurst = suffragettes = votes for women.", "period": "early 20th century"}, {"name": "Winston Churchill", "who": "Prime Minister, most notably 1940-1945 during the Second World War.", "why": "His wartime leadership and speeches are widely credited with sustaining British morale through the war's darkest years.", "fact": "He lost the 1945 general election shortly after the war ended in Europe, despite his wartime standing.", "memory": "Churchill = WWII Prime Minister = the wartime speeches.", "period": "20th century"}, {"name": "Aneurin Bevan", "who": "Labour politician who served as Minister of Health after the Second World War.", "why": "Led the creation of the National Health Service (NHS) in 1948, providing healthcare free at the point of use.", "fact": "The NHS is regularly cited as one of the most significant achievements of post-war British government.", "memory": "Bevan = NHS founder, 1948.", "period": "20th century"}];
+
+function vLesson(slug){
+  const L = LESSONS[slug];
+  if(!L) { go('study'); return ''; }
+  return `<div class="page"><div class="narrow">
+    <p class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-600)">Study Centre &middot; Lesson</p>
+    <h1 style="font-size:1.9rem" class="mt1">${esc(L.title)}</h1>
+    <p class="muted mt2" style="font-size:1.02rem">${esc(L.intro)}</p>
+
+    ${L.sections.map(sec => `
+      <h2 style="font-size:1.25rem" class="mt4">${esc(sec.h)}</h2>
+      ${sec.p.map(p => `<p class="mt2" style="line-height:1.65">${esc(p)}</p>`).join('')}
+    `).join('')}
+
+    <h2 style="font-size:1.25rem" class="mt4">Key terms</h2>
+    <div class="grid mt2">
+      ${L.keyTerms.map(([term,def]) => `<div class="card" style="padding:1rem 1.25rem">
+        <p style="font-weight:700;color:var(--navy)">${esc(term)}</p>
+        <p class="muted mt1" style="font-size:.9rem">${esc(def)}</p>
+      </div>`).join('')}
+    </div>
+
+    <h2 style="font-size:1.25rem" class="mt4">Easy to confuse</h2>
+    ${L.confusions.map(([title,body]) => `<div class="explain mt2">
+      <p style="font-weight:700;color:var(--navy)">${esc(title)}</p>
+      <p class="why mt1">${esc(body)}</p>
+    </div>`).join('')}
+
+    <div class="note mt4">
+      <p style="font-weight:700;margin-bottom:.4rem">Remember it like this</p>
+      ${esc(L.memoryTip)}
+    </div>
+
+    <div class="row mt4">
+      <button class="btn btn-primary" onclick="startStudy('${slug}')">Practise this chapter's questions</button>
+      <button class="btn btn-outline" onclick="go('study')">Back to Study Centre</button>
+    </div>
+  </div></div>`;
+}
+
+function vKnowledgePeople(){
+  return `<div class="page"><div class="wrap">
+    <p class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-600)">Knowledge Bank</p>
+    <h1 style="font-size:1.9rem" class="mt1">People You Should Know</h1>
+    <p class="muted mt2" style="max-width:60ch">Historical and civic figures who come up repeatedly in Life in the UK preparation, with the fact that actually matters for the test, not a full biography.</p>
+    <div class="grid grid-2 mt4">
+      ${PEOPLE.map(p => `<div class="card" style="padding:1.4rem">
+        <p style="font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-600)">${esc(p.period)}</p>
+        <h3 style="font-size:1.15rem;margin-top:.3rem">${esc(p.name)}</h3>
+        <p class="muted mt1" style="font-size:.85rem">${esc(p.who)}</p>
+        <p class="mt2" style="font-size:.9rem"><strong>Why they matter:</strong> ${esc(p.why)}</p>
+        <p class="mt2" style="font-size:.9rem"><strong>Key fact:</strong> ${esc(p.fact)}</p>
+        <p class="explain mt2" style="font-size:.85rem">${esc(p.memory)}</p>
+      </div>`).join('')}
+    </div>
+    <div class="note mt4">This is a growing knowledge bank. More figures, plus Places and an interactive Timeline, are being added over time.</div>
+  </div></div>`;
+}
+
+function vMistakes(){
+  const p = loadProgress();
+  const missed = Object.entries(p.misses)
+    .filter(([id,r]) => r.missed > 0)
+    .sort((a,b) => b[1].missed - a[1].missed)
+    .map(([id,r]) => ({q: Q.find(q=>q.id===id), r}))
+    .filter(x => x.q);
+
+  if(!missed.length){
+    return `<div class="page"><div class="narrow center">
+      <h1 style="font-size:1.9rem">My mistakes</h1>
+      <div class="card mt4"><p class="muted">No mistakes recorded yet on this device. Once you get a question wrong in a test or study session, it'll appear here for targeted review.</p>
+      <button class="btn btn-primary mt3" onclick="go('tests')">Start a practice test</button></div>
+    </div></div>`;
+  }
+
+  return `<div class="page"><div class="wrap">
+    <h1 style="font-size:1.9rem">My mistakes</h1>
+    <p class="muted mt1">Every question you've answered incorrectly on this device, most-missed first. Stored locally &mdash; nothing sent to a server.</p>
+    <div class="row mt3" style="justify-content:flex-start">
+      <button class="btn btn-secondary btn-sm" onclick="startWeak()">Practise these now</button>
+    </div>
+    <div class="grid mt4">
+      ${missed.map(({q,r}) => `<div class="qcard">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem">
+          <p class="q">${esc(q.text)}</p>
+          <span class="pill" style="flex-shrink:0">${r.missed}&times; missed</span>
+        </div>
+        <p class="a mt1">Correct answer: <strong>${q.correct}) ${esc(q[q.correct])}</strong></p>
+        <p class="why mt1">${esc(q.why)}</p>
+      </div>`).join('')}
+    </div>
+  </div></div>`;
+}
+
+/* ---------- Question of the Day / Fact of the Day ----------
+   Deterministic date-based rotation: same question/fact all day for
+   everyone, changes at midnight, no server or account needed. */
+function dayIndex(mod){
+  const start = new Date(2026, 0, 1).getTime();
+  const days = Math.floor((Date.now() - start) / 86400000);
+  return ((days % mod) + mod) % mod;
+}
+function questionOfDay(){ return Q[dayIndex(Q.length)]; }
+function personOfDay(){ return PEOPLE[dayIndex(PEOPLE.length)]; }
+
+
 const esc = s => String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
 /* ---------- State ---------- */
@@ -408,18 +528,20 @@ function studyNext(){ S.sel=null; S.idx++; render(); window.scrollTo(0,0); }
 /* ---------- Views ---------- */
 function render(){
   const app=document.getElementById('app');
-  app.innerHTML = ({home:vHome,tests:vTests,study:vStudy,studyrun:vStudyRun,run:vRun,result:vResult,dashboard:vDash,privacy:vPrivacy,terms:vTerms,cookies:vCookies,about:vAbout}[view]||vHome)();
+  app.innerHTML = ({home:vHome,tests:vTests,study:vStudy,studyrun:vStudyRun,run:vRun,result:vResult,dashboard:vDash,privacy:vPrivacy,terms:vTerms,cookies:vCookies,about:vAbout,'lesson-values':()=>vLesson('values'),'lesson-whatis':()=>vLesson('whatis'),people:vKnowledgePeople,mistakes:vMistakes}[view]||vHome)();
 }
 
 function vHome(){
+  const qod = questionOfDay();
+  const pod = personOfDay();
   return `
   <section class="hero"><div class="wrap">
-    <span class="eyebrow">Free practice · No official affiliation</span>
-    <h1>Pass your Life in the UK Test with confidence</h1>
-    <p class="lede">Practise with realistic multiple-choice questions, timed 45-minute mock tests and targeted revision built around your weak topics.</p>
+    <span class="eyebrow">Free · Independent preparation resource · No official affiliation</span>
+    <h1>Learn it. Practise it. Remember it. Be ready.</h1>
+    <p class="lede">A free Life in the UK preparation centre: structured lessons, an original 262-question practice bank, realistic 45-minute mock exams, and revision built around exactly what you get wrong.</p>
     <div class="hero-cta">
-      <button class="btn btn-primary btn-lg" onclick="go('tests')">Start free practice</button>
-      <button class="btn btn-outline-light btn-lg" onclick="go('study')">Browse study chapters</button>
+      <button class="btn btn-primary btn-lg" onclick="go('tests')">Start a practice test</button>
+      <button class="btn btn-outline-light btn-lg" onclick="go('study')">Start learning</button>
     </div>
     <dl class="stats">
       <div><dt>Practice tests</dt><dd>15</dd></div>
@@ -429,22 +551,59 @@ function vHome(){
   </div></section>
 
   <section class="section"><div class="wrap">
-    <h2>Everything you need to pass</h2>
+    <h2>A learning platform, not just a quiz</h2>
+    <p class="muted center" style="max-width:60ch;margin:.75rem auto 0">Most sites hand you 24 questions and a score. We'd rather you understood the material well enough that the score takes care of itself.</p>
     <div class="grid grid-3 mt4">
-      ${[['⏱','45-minute mock exams','24 questions, 75% pass mark — the exact mechanics of the real test.'],
-         ['◎','Weak-topic engine','Every question you miss is tracked, then fed back as targeted revision.'],
-         ['▤','Progress tracking','Accuracy by chapter, best score, and your streak over time.'],
-         ['◈','Study chapters','Untimed mode: answer, see the correct answer immediately, read why.'],
+      ${[['◈','Study Centre','Full written lessons on each topic — not just questions — with key terms and memory aids.'],
+         ['⏱','45-minute mock exams','24 questions, 75% pass mark — the exact mechanics of the real test.'],
+         ['◎','Weak-area tracking','Every question you miss is saved on your device and fed back as targeted revision.'],
+         ['👤','Knowledge Bank','The people, places and events that come up again and again, explained properly.'],
          ['⚡','Quick practice','10, 20 or 24-question sessions when you only have a few minutes.'],
-         ['✓','Honest results','Full breakdown of correct, incorrect and unanswered — reviewed one by one.']
+         ['✓','Honest results','Full breakdown of correct, incorrect and unanswered — reviewed question by question.']
         ].map(f=>`<div class="card"><div class="icon">${f[0]}</div><h3>${f[1]}</h3><p>${f[2]}</p></div>`).join('')}
     </div>
   </div></section>
 
-  <section class="section band"><div class="narrow center">
-    <h2>Practice → Learn → Track → Improve → Pass</h2>
-    <p class="muted mt2">Free practice works without an account. Signing in saves your scores and unlocks the weak-topic engine.</p>
+  <section class="section band"><div class="wrap">
+    <h2>Today's practice</h2>
+    <div class="grid grid-2 mt4">
+      <div class="card">
+        <p class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-600)">Question of the Day</p>
+        <p class="q mt2">${esc(qod.text)}</p>
+        <button class="btn btn-outline btn-sm mt3" onclick="go('tests')">Answer it in a practice test</button>
+      </div>
+      <div class="card">
+        <p class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-600)">Person You Should Know</p>
+        <h3 class="mt1">${esc(pod.name)}</h3>
+        <p class="muted mt1" style="font-size:.9rem">${esc(pod.why)}</p>
+        <button class="btn btn-outline btn-sm mt3" onclick="go('people')">See the full Knowledge Bank</button>
+      </div>
+    </div>
+  </div></section>
+
+  <section class="section"><div class="wrap">
+    <h2>How the test actually works</h2>
+    <div class="grid grid-3 mt4">
+      <div class="card"><h3 style="font-size:1rem">24 questions, 45 minutes</h3><p class="muted" style="font-size:.88rem">Multiple choice, drawn from across the syllabus. You need 18 correct (75%) to pass.</p></div>
+      <div class="card"><h3 style="font-size:1rem">Booked through GOV.UK</h3><p class="muted" style="font-size:.88rem">The official test is booked and sat separately — this site is independent preparation, not the test itself.</p></div>
+      <div class="card"><h3 style="font-size:1rem">Usually required for settlement/citizenship</h3><p class="muted" style="font-size:.88rem">Requirements can change — always confirm current rules on GOV.UK before relying on anything here.</p></div>
+    </div>
+    <div class="row mt3"><a href="/test-guide.html" class="btn btn-secondary">Read the full test guide</a></div>
+  </div></section>
+
+  <section class="section band center"><div class="narrow">
+    <h2>Learn → Practise → Review → Improve</h2>
+    <p class="muted mt2">Everything works without an account. Your progress and weak areas are saved on this device only — nothing is sent anywhere.</p>
     <div class="mt3"><button class="btn btn-primary btn-lg" onclick="go('tests')">Take a practice test</button></div>
+  </div></section>
+
+  <section class="section"><div class="wrap narrow">
+    <div class="note" style="text-align:left">
+      <strong>Independent resource notice:</strong> YourUKHelpDesk is produced by Risten Global Ltd and is not affiliated with,
+      endorsed by, or connected to the UK Home Office, GOV.UK, or the official Life in the UK Test. Practice questions and
+      lessons are original educational content, written for revision, not reproductions of the official test.
+      For current official requirements, always check <a href="https://www.gov.uk/life-in-the-uk-test" target="_blank" rel="noopener">GOV.UK</a>.
+    </div>
   </div></section>`;
 }
 
@@ -475,16 +634,22 @@ function vTests(){
 
 function vStudy(){
   return `<div class="page"><div class="narrow">
-    <h1 style="font-size:1.9rem">Study chapters</h1>
-    <p class="muted mt1">Untimed revision: answer, see the correct answer straight away, and read why.</p>
+    <h1 style="font-size:1.9rem">Study Centre</h1>
+    <p class="muted mt1">Read the lesson first where one's available, then practise the questions &mdash; or jump straight to untimed practice with instant explanations.</p>
     <div class="grid mt4">
       ${CHAPTERS.map((c,i)=>{
         const n=Q.filter(q=>q.ch===c.slug).length;
-        return `<div class="card clickable" onclick="startStudy('${c.slug}')" role="button" tabindex="0">
+        const hasLesson = !!LESSONS[c.slug];
+        return `<div class="card">
           <div class="chapter-row">
             <div><div class="num">Chapter ${i+1}</div><h3>${c.title}</h3><p>${c.desc}</p></div>
             <span class="count">${n} questions</span>
-          </div></div>`;
+          </div>
+          <div class="row mt3" style="justify-content:flex-start">
+            ${hasLesson ? `<button class="btn btn-secondary btn-sm" onclick="go('lesson-${c.slug}')">Read the lesson</button>` : ''}
+            <button class="btn ${hasLesson?'btn-outline':'btn-secondary'} btn-sm" onclick="startStudy('${c.slug}')">Practice questions</button>
+          </div>
+        </div>`;
       }).join('')}
     </div>
     <div class="adslot" data-ad-slot="study-index" aria-hidden="true"></div>
@@ -746,7 +911,7 @@ function vDash(){
         </div>`).join('')}</div>
         <button class="btn btn-secondary mt2" ${weakCount?'':'disabled'} onclick="startWeak()">
           Practise my weak areas${weakCount?' ('+weakCount+')':''}</button>
-        ${weakCount?'':'<p class="muted mt2" style="font-size:.8rem">Once you get some questions wrong, they\u2019ll be collected here for targeted revision.</p>'}
+        ${weakCount?`<button class="btn btn-outline btn-sm mt2" onclick="go('mistakes')">Review my mistakes in detail</button>`:'<p class="muted mt2" style="font-size:.8rem">Once you get some questions wrong, they\u2019ll be collected here for targeted revision.</p>'}
       </div>
       <div><h2 style="font-size:1.2rem">Recent attempts</h2>
         <div class="mt3">${attempts.slice().reverse().slice(0,10).map(h=>`<div class="card" style="padding:1rem;margin-bottom:.6rem">
@@ -833,7 +998,7 @@ function renderConsent(){
 /* Deep-link support: SEO landing pages link here as index.html#tests,
    #study, #dashboard etc. so external/search traffic lands directly on the
    right screen instead of always the homepage. */
-const validViews = ['home','tests','study','dashboard','privacy','terms','cookies','about'];
+const validViews = ['home','tests','study','dashboard','privacy','terms','cookies','about','lesson-values','lesson-whatis','people','mistakes'];
 const initialHash = (location.hash || '').replace('#','');
 if (validViews.includes(initialHash)) view = initialHash;
 
