@@ -2,7 +2,7 @@
 
 Free Life in the UK practice tests — 15 mock exams, 262 questions, instant results. No sign-up required.
 
-Live at: https://lifeintheuktest.risten.co.uk
+Live at: https://www.youruklifetest.co.uk
 
 Single static `index.html`, no build step, no backend, no accounts. Progress is stored in the visitor's own browser (localStorage) and never sent to a server.
 
