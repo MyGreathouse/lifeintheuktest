@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lifeintheuktest.risten.co.uk/sitemap.xml
+Sitemap: https://www.youruklifetest.co.uk/sitemap.xml
