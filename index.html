@@ -241,9 +241,9 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
       <a href="/test-revision.html" style="color:var(--gold)">Test Revision</a>
     </p>
     <p class="mt2" style="font-size:.82rem">
-      <button onclick="go('about')" style="color:var(--navy-300);text-decoration:underline">About</button> &nbsp;·&nbsp;
+      <a href="/contact.html" style="color:var(--navy-300);text-decoration:underline">About &amp; Contact</a> &nbsp;·&nbsp;
       <a href="/editorial-policy.html" style="color:var(--navy-300);text-decoration:underline">Editorial Policy</a> &nbsp;·&nbsp;
-      <button onclick="go('privacy')" style="color:var(--navy-300);text-decoration:underline">Privacy</button> &nbsp;·&nbsp;
+      <a href="/privacy-policy.html" style="color:var(--navy-300);text-decoration:underline">Privacy Policy</a> &nbsp;·&nbsp;
       <button onclick="go('cookies')" style="color:var(--navy-300);text-decoration:underline">Cookies</button> &nbsp;·&nbsp;
       <button onclick="go('terms')" style="color:var(--navy-300);text-decoration:underline">Terms</button>
     </p>
@@ -817,8 +817,7 @@ function vPrivacy(){
     active \u2014 it does, through those providers.</p>
     <h2 class="mt3" style="font-size:1.1rem">Your rights</h2>
     <p class="mt1">Because we hold no personal data about you on our own systems, there is no
-    account to access, correct or delete. For questions about this notice, contact Risten Global Ltd
-    through the main YourUKHelpDesk site.</p>`);
+    account to access, correct or delete. For questions about this notice, email Risten Global Ltd at admin@risten.co.uk.</p>`);
 }
 
 function vCookies(){
@@ -986,7 +985,7 @@ function renderConsent(){
   div.innerHTML = `<div class="consent-inner">
     <p>We\u2019d like to use cookies for advertising and analytics to keep this site free.
        Your practice progress is stored on your own device either way and is never sent to us.
-       See our <a href="#" onclick="go('privacy');return false">privacy notice</a>.</p>
+       See our <a href="/privacy-policy.html">privacy policy</a>.</p>
     <div class="btns">
       <button class="btn btn-outline-light btn-sm" onclick="setConsent('denied')">Reject non-essential</button>
       <button class="btn btn-primary btn-sm" onclick="setConsent('granted')">Accept all</button>
