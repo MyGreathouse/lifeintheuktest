@@ -54,6 +54,7 @@ header.nav{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.96);bac
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
 .brand{font-family:Fraunces,serif;font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:.5rem;white-space:nowrap}
 .brand span{color:var(--gold-600)}
+a.brand{text-decoration:none;color:inherit;cursor:pointer}
 .brand .mark{width:26px;height:26px;border-radius:6px;background:var(--navy);display:grid;place-items:center;color:var(--gold);font-size:.75rem;font-weight:700}
 .nav-links{display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap}
 .nav-links button,.nav-links a{font-size:.85rem;font-weight:500;color:var(--navy-600);text-decoration:none}
@@ -211,7 +212,7 @@ footer.foot .disclaim{font-size:.75rem;color:var(--navy-300);margin-top:1.5rem;p
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <div class="brand"><span class="mark">UK</span>YourUK<span>HelpDesk</span></div>
+    <a class="brand" href="/" aria-label="YourUKHelpDesk home" onclick="go('home');return false"><span class="mark">UK</span>YourUK<span>HelpDesk</span></a>
     <button class="navtoggle" id="navtoggle" aria-label="Open menu" aria-expanded="false" aria-controls="navlinks" onclick="toggleNav()">☰</button>
     <nav class="nav-links" id="navlinks">
       <button onclick="go('home')">Home</button>
