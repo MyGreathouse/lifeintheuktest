@@ -37,19 +37,24 @@ The question bank and mock tests are stored inside `index.html`:
 - `const SETS` lists the 15 mock tests as 24 question positions each.
 - Question IDs run in order (`q0`, `q1`, and so on), and a question's ID number matches its position in `Q`. When adding questions, add them at the end.
 
-After changing the file, commit it to `main`. Vercel then redeploys automatically.
+After changing the file, commit it to `main`. Cloudflare then rebuilds and publishes the site automatically, usually within a minute or two.
 
 ## Content and accuracy
 
-All questions and lessons are written in our own words, based on the official Life in the UK handbook. Always check current test rules and fees on GOV.UK before you book. See the [Editorial Policy](https://www.youruklifetest.co.uk/editorial-policy.html).
+All questions and lessons are written in our own words, based on the official Life in the UK handbook. Always check current test rules and fees on GOV.UK before you book. See the [Editorial Policy](https://www.youruklifetest.co.uk/editorial-policy).
 
 ## Hosting
 
-The site is deployed on Vercel from the `main` branch of this repository. The domain and DNS are managed through Cloudflare.
+The site is hosted on Cloudflare (Workers static assets) and deploys automatically from the `main` branch of this repository. The domain, DNS and the redirect from the bare domain to `www` are also managed in Cloudflare.
+
+- `wrangler.jsonc` tells Cloudflare to publish the repository root as a static site.
+- `.assetsignore` keeps working files (notes, JSON drafts, config) out of the public site.
+- Pages are served without the `.html` ending (for example `/faq`), and canonical tags and the sitemap use the same short addresses.
+- The old Vercel address and the old `lifeintheuktest.risten.co.uk` address redirect to the main site.
 
 ## Corrections and contact
 
-Found a mistake or have a suggestion? Email **admin@risten.co.uk** with the page and what you found, or use the [Contact page](https://www.youruklifetest.co.uk/contact.html).
+Found a mistake or have a suggestion? Email **admin@risten.co.uk** with the page and what you found, or use the [Contact page](https://www.youruklifetest.co.uk/contact).
 
 ## Disclaimer
 
