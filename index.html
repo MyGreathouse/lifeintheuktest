@@ -298,7 +298,7 @@ function vLesson(slug){
     <p class="num" style="font-size:.7rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-600)">Study Centre &middot; Lesson</p>
     <h1 style="font-size:1.9rem" class="mt1">${esc(L.title)}</h1>
     <p class="muted mt2" style="font-size:1.02rem">${esc(L.intro)}</p>
-    ${L.img ? `<figure class="mt3" style="margin-left:0;margin-right:0"><img src="/img-${L.img}.jpg" alt="${esc(L.alt)}" width="1280" height="720" loading="lazy" style="width:100%;height:auto;border-radius:.6rem;display:block"><figcaption class="muted" style="font-size:.8rem;margin-top:.4rem">Illustrative image created with AI.</figcaption></figure>` : ''}
+    ${L.img ? `<figure class="mt3" style="margin-left:0;margin-right:0"><img src="/img-${L.img}.jpg" alt="${esc(L.alt)}" width="1280" height="720" loading="lazy" style="width:100%;height:auto;border-radius:.6rem;display:block"></figure>` : ''}
 
     ${L.sections.map(sec => `
       <h2 style="font-size:1.25rem" class="mt4">${esc(sec.h)}</h2>
@@ -578,7 +578,7 @@ function vHome(){
       <div><dt>Question bank</dt><dd>608</dd></div>
     </dl>
   </div></section>
-  <div class="wrap" style="padding-top:1.6rem"><figure style="margin:0"><img src="/img-what-is-the-uk.jpg" alt="Visitors in front of a collage of the four nations: a Scottish castle and mountains, an English village, a Welsh castle and the Giant&#x27;s Causeway in Northern Ireland, with the Union flag and Big Ben" width="1280" height="720" style="width:100%;height:auto;border-radius:.6rem;display:block" fetchpriority="high"><figcaption style="font-size:.8rem;color:#5573AB;margin-top:.4rem">Illustrative image created with AI.</figcaption></figure></div>
+  <div class="wrap" style="padding-top:1.6rem"><figure style="margin:0"><img src="/img-what-is-the-uk.jpg" alt="Visitors in front of a collage of the four nations: a Scottish castle and mountains, an English village, a Welsh castle and the Giant&#x27;s Causeway in Northern Ireland, with the Union flag and Big Ben" width="1280" height="720" style="width:100%;height:auto;border-radius:.6rem;display:block" fetchpriority="high"></figure></div>
 
   <section class="section"><div class="wrap">
     <h2>A learning platform, not just a quiz</h2>
